@@ -182,13 +182,14 @@ Never run marketing that attacks wholesalers as a group. Attack the behavior, no
 
 ---
 
-## Fair Housing Rules (mandatory)
+## Fair Housing Rules
 
-Never reference, imply, or describe the people who live in an area by race, color, national origin, religion, sex, gender identity, sexual orientation, familial status, or disability.
+These are shared across every brand and live in one place.
 
-Do describe: condition, price, size, lot, location, commute, repairs needed.
+**Read `company/compliance.md` in this repository, section "Fair Housing Rules."**
 
-Never describe who would or would not fit in a home or a neighborhood.
+They are not duplicated here. If you cannot reach that file, say so and stop.
+Do not write housing content from memory.
 
 ---
 

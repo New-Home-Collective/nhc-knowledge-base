@@ -84,3 +84,17 @@ These are shared across every Bob brand and live in one place.
 **Read the `BRAND-VOICE.md` file in the `nhc-brand-voice` skill, section "Universal Writing Rules."**
 
 Everything above this line is Lake Days specific and stays here. The writing rules are shared, so they are not duplicated here anymore.
+
+---
+
+## Fair Housing Rules
+
+These are shared across every brand and live in one place.
+
+**Read `company/compliance.md` in this repository, section "Fair Housing Rules."**
+
+They are not duplicated here. If you cannot reach that file, say so and stop.
+Do not write housing content from memory.
+
+This applies to cabin listings and travel content too. A cabin someone stays
+in is a dwelling.

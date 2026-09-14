@@ -124,22 +124,14 @@ These apply to every word NHC publishes. No exceptions.
 
 ---
 
-## Fair Housing Rules (mandatory, every skill, every time)
+## Fair Housing Rules
 
-Never include language that references, implies, or describes the people who live in an area by:
+These are shared across every brand and live in one place.
 
-- Race, color, or national origin
-- Religion
-- Sex, gender identity, or sexual orientation
-- Familial status (including "great for families" as a standalone descriptor)
-- Disability
+**Read `company/compliance.md` in this repository, section "Fair Housing Rules."**
 
-**Do describe:** walkability, school proximity, commute times, home sizes, price ranges, parks, restaurants, median prices. Let the data speak.
-
-**Say:** "near top-rated schools"
-**Not:** "great school district for your kids"
-
-Never describe who would or would not fit in a home or neighborhood.
+They are not duplicated here. If you cannot reach that file, say so and stop.
+Do not write housing content from memory.
 
 ---
 
