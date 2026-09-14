@@ -36,7 +36,7 @@ These are the hardest rules in this file. Getting them wrong creates false adver
 
 **What is actually true:**
 - Under 10 minutes to Lake Cumberland
-- Real selling points: privacy, quiet, comfort, and proximity to Lake Cumberland attractions
+- Real selling points: privacy, quiet, family-friendly comfort, and proximity to Lake Cumberland attractions
 
 Never write "lakefront," "waterfront," "lake view," "steps from the water," "dock access," or "soak in the hot tub." If a draft implies any of these, rewrite it. Sell the quiet and the privacy, which are real, not the water view, which is not.
 
@@ -126,12 +126,24 @@ The universal writing rules are shared across all three. Nothing else is.
 
 ---
 
+## Platform Rules
+
+Lake Days cabins are listed on Airbnb. Airbnb has its own nondiscrimination
+policy, and every listing and message has to follow it on top of the fair
+housing rules in compliance.md. Nobody has written down yet where the two
+overlap and where Airbnb allows wording that a home sale listing would not.
+See Open Items.
+
+---
+
 ## Open Items
 
-1. The selling points list used to read "family-friendly comfort." Compliance
-   names "great for families" on its own as a familial status risk, so the
-   word came out on September 14, 2026. Bob or Blaire should confirm the
-   remaining list still says what they want.
+1. "Family-friendly comfort" in the selling points was removed on
+   September 14, 2026 as a fair housing precaution, then restored the same
+   day because Lake Days is a short term rental on Airbnb and may follow
+   different rules. The word stands as Bob and Blaire approved it. Bob or an
+   attorney needs to confirm what familial status language is allowed on an
+   Airbnb listing versus a home sale listing, and write that down here.
 2. Property facts (no lake views, no hot tubs, no private docks, under 10
    minutes to the lake) carry no verification date. Blaire should confirm
    them and date them.

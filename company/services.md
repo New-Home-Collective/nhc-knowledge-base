@@ -21,14 +21,22 @@ from memory.
 
 A real estate team in Lexington and Central Kentucky, brokered by eXp Realty.
 
-Who it serves, in the brand's own words: buyers, sellers, investors, and
-agents.
+**Draft. Bob approves before this list is used in public content.** Nothing
+below was invented. Each line comes from something the team already does in
+its apps, skills, or brand file. Until Bob approves, describe NHC by who it
+serves (buyers, sellers, investors, and agents), not by this list.
 
-**Open item.** The repo does not yet hold an approved list of NHC services
-written as services. The brand file describes content types (buyer, seller,
-cash offer, agent recruiting, market updates, listings) but never lists what
-the team offers. Bob needs to approve that list before anything gets written
-here. Until then, describe NHC by who it serves, not by a service menu.
+- **Buyer representation.** Helping people find and buy homes in Lexington
+  and Central Kentucky.
+- **Listing and selling.** Pricing, marketing, and selling homes. Home
+  equity reports before listing, seller update reports while on the market.
+- **Cash offers.** A cash offer path for sellers who want speed and
+  certainty, run through the NHC Cash Offer Hub. Cash offer content follows
+  the honesty rules in the BE brand file, because BE is the buyer.
+- **Investor work.** Helping investors buy and sell in Central Kentucky.
+- **Agent recruiting and development.** Bringing agents onto the team and
+  training them. Recruiting content follows the "Agent recruiting" tone in
+  the brand file.
 
 ---
 
