@@ -20,7 +20,6 @@ rules this repo runs on.
 | --- | --- |
 | `brands/` | Brand voice and identity facts for New Home Collective, BE Property Ventures, and Lake Days, Cabin Stays. One file per brand. |
 | `company/` | Facts that are true across all three brands. Team roster, services, compliance. |
-| `voice/` | The prompts Sadie uses to answer the phone. Operational, and sensitive. |
 
 Each file says at the top what it owns. If a fact is not in the file that owns
 it, it does not exist yet, and the answer is to add it there rather than write
@@ -52,12 +51,16 @@ stop rather than improvise.
 
 ## Access
 
-The repo is private. Reading it requires access to the `New-Home-Collective`
-GitHub organization.
+The repo is public. Any AI tool can read these files with no account, no
+invite, and no setup.
 
-A tool without that access will fail to read the file and will stop, which is
-the behavior we want. It is not a broken skill. It is the safety rule doing
-its job. The fix is to grant access, never to paste the fact into the skill.
+That is deliberate. Nothing in here is secret. It is brand voice, writing
+rules, and fair housing rules, all of it either already public or harmless if
+it were. Anything operational or sensitive belongs somewhere else. Sadie's
+phone prompt used to live here and now lives in the `nhc-ops` repo.
+
+If a read does fail, the skill still says so and stops. It never answers from
+memory.
 
 ---
 

@@ -39,10 +39,9 @@ This matters most for the fair housing rules in
 `brands/nhc/BRAND-VOICE.md`. A brand fact recalled from memory is
 embarrassing. A fair housing rule recalled from memory is a legal problem.
 
-This repo is private. Reading it requires access to the
-`New-Home-Collective` GitHub organization. A tool without that access will
-fail rule 3 correctly, which looks like a broken skill but is the system
-working.
+This repo is public, so any AI tool can read it with no account, no invite,
+and no connector setup. A read should only fail if GitHub is down or the file
+was renamed. Either way rule 3 still applies: say so and stop.
 
 ### 4. Nothing with a live source goes in here
 
@@ -70,17 +69,15 @@ brands/lake-days/BRAND-VOICE.md  Lake Days, Cabin Stays
 company/people.md              team roster and roles
 company/services.md            what we offer
 company/compliance.md          fair housing and disclosure rules
-
-voice/sadie-prompt.md          the prompt Sadie answers inbound calls with
-voice/sadie-greeting.md        Sadie's greeting
 ```
 
 Brands do not mix. The universal writing rules apply to all three. The New
 Home Collective identity facts apply only to New Home Collective.
 
-`voice/` is the one part of this repo that is operational rather than
-editorial. Treat it as sensitive. It is the script an AI uses to answer the
-company phone.
+This repo is public. Nothing operational and nothing sensitive belongs in it.
+Sadie's phone prompt used to live here and was moved to the `nhc-ops` repo,
+at `docs/sadie-prompt.md`, because Ops owns Sadie and the routing behind her.
+No credentials, no keys, no phone scripts.
 
 ---
 
@@ -119,12 +116,6 @@ value rather than trusting the line number.
 `nhc-bio-builder/references/nhc-brand.md` is already done. It is a short file
 that points at the real source and holds no facts of its own. Use it as the
 model for the five above.
-
-### Blocked
-
-`voice/sadie-prompt.md` is empty until Sadie's prompt can be pulled out of
-Vapi. `api.vapi.ai` is not reachable from the current sandbox, so this needs
-either that domain allowed or a browser session.
 
 ---
 
