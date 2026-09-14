@@ -1,5 +1,10 @@
 # Compliance
 
+Last updated: September 14, 2026
+Last verified: September 14, 2026
+Owner: Bob Sophiea. Maintainer: Madison Feldman.
+Review cycle: every six months, and immediately if the law or brokerage guidance changes.
+
 This file owns the fair housing rules for every brand. New Home Collective,
 BE Property Ventures, and Lake Days, Cabin Stays all follow what is written
 here.
@@ -15,7 +20,7 @@ recalled wrong is a legal problem.
 
 ## Fair Housing Rules
 
-Mandatory. Every brand, every skill, every time.
+Mandatory. Every brand, every tool, every time.
 
 ### Never describe the people
 

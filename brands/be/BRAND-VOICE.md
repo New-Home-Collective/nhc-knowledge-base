@@ -1,10 +1,13 @@
 # BE Property Ventures Brand Voice: The Single Source of Truth
 
-This is the only file that defines BE Property Ventures brand voice, identity facts, and writing rules.
+Last updated: September 14, 2026
+Last verified: August 10, 2026 (identity facts). See Open Items for what is still unconfirmed.
+Owner: Bob Sophiea. Maintainer: Madison Feldman.
+Review cycle: quarterly.
 
-If any other skill contradicts this file, this file wins. Do not copy this content into other skills. Point to it instead.
+This is the only file that defines BE Property Ventures brand voice and identity facts.
 
-Last updated: August 10, 2026
+If any other file, skill, or prompt contradicts this file, this file wins. Do not copy this content anywhere else. Point to it instead.
 
 ---
 
@@ -67,7 +70,7 @@ Use it as three short lines when there's room. Use the bullet version (We Buy â€
 - **Email:** open
 - **Mailing address:** open
 
-**Spelling rule:** Eric Kimble. Not Kimball. Bob Sophiea. Not Sofia, not Sophia.
+**Spelling rule:** name spellings live in one place. Fetch this web page: https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/people.md
 
 **NMLS rule:** any marketing that names Eric Kimble alongside lending, financing, mortgage, or loan terms must display **NMLS #13855**. No exceptions. This includes social posts, flyers, mailers, video captions, and web pages. If Eric is named and money-lending language appears anywhere in the piece, the NMLS number appears too.
 
@@ -75,15 +78,14 @@ Use it as three short lines when there's room. Use the bullet version (We Buy â€
 
 ---
 
-## What We Do (all five, every time we describe ourselves)
+## What We Do
 
-- **Buy and hold.** Long term rentals in Central Kentucky.
-- **Flip.** Buy it rough, fix it right, sell it.
-- **Wholesale.** Get it under contract and bring in a partner to close when that is the better path.
-- **Remodel.** Full renovation work on our own properties.
-- **Build.** New construction.
+The five things BE does, and the rule that all five get named every time, live in one place for every brand.
 
-Never describe BE as just a cash offer company. Never describe BE as just a BRRRR operation. The range is the point. It means we can say yes to more situations than the guy who only does one thing.
+**Fetch this web page: https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/services.md**
+
+It is not duplicated here. If you cannot reach that file, say so and stop.
+Do not describe what BE does from memory.
 
 ---
 
@@ -203,8 +205,12 @@ Rule: gold leads, black structures, white supports. Black background is the defa
 
 ## Relationship to Other Brands
 
-- **New Home Collective** is the real estate team. Different company, different rules. Use the `nhc-brand-voice` skill.
-- **Lake Days, Cabin Stays** is the short term rental brand. Use the `lake-days-blog-writer` skill.
+- **New Home Collective** is the real estate team. Different company, different rules. Its facts live here:
+  https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/brands/nhc/BRAND-VOICE.md
+- **Lake Days, Cabin Stays** is the short term rental brand. Its facts live here:
+  https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/brands/lake-days/BRAND-VOICE.md
+- What each brand does is defined once here:
+  https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/services.md
 
 The universal writing rules are shared across all three. Nothing else is. Never mix two brands in one piece of content.
 

@@ -6,6 +6,11 @@ This repo is not an app. There is no build, no database, no deploy, and no
 preview link. It is writing. It holds the company's facts so that every AI
 tool New Home Collective uses says the same thing.
 
+It is platform neutral. Claude, ChatGPT, and whatever comes next all read the
+same files. Files in here say what is true and where the source lives. They
+never name a Claude skill or a ChatGPT action. The tool decides what to do.
+The file only decides what is true.
+
 ---
 
 ## The four rules
@@ -36,7 +41,7 @@ fails, the correct behavior is to tell the person it could not reach the file
 and stop. It must not answer from memory, and it must not guess.
 
 This matters most for the fair housing rules in
-`brands/nhc/BRAND-VOICE.md`. A brand fact recalled from memory is
+`company/compliance.md`. A brand fact recalled from memory is
 embarrassing. A fair housing rule recalled from memory is a legal problem.
 
 This repo is public, so any AI tool can read it with no account, no invite,
@@ -59,20 +64,25 @@ get wired to a live feed.
 ## Layout
 
 ```
-AGENTS.md                      this file, the rules
-README.md                      what the repo is and how to point at it
+AGENTS.md                        this file, the rules
+README.md                        what the repo is and how to point at it
 
-brands/nhc/BRAND-VOICE.md      New Home Collective
-brands/be/BRAND-VOICE.md       BE Property Ventures
+brands/nhc/BRAND-VOICE.md        New Home Collective
+brands/be/BRAND-VOICE.md         BE Property Ventures
 brands/lake-days/BRAND-VOICE.md  Lake Days, Cabin Stays
 
-company/people.md              team roster and roles
-company/services.md            what we offer
-company/compliance.md          fair housing and disclosure rules
+company/people.md                team roster, roles, name spelling
+company/services.md              what each brand does
+company/compliance.md            fair housing rules, all brands
+company/writing-rules.md         universal writing rules, all brands
 ```
 
-Brands do not mix. The universal writing rules apply to all three. The New
-Home Collective identity facts apply only to New Home Collective.
+Brands do not mix. The universal writing rules and the fair housing rules
+apply to all three. Everything under `brands/` applies to that one brand.
+
+Every core file opens with the same four lines: Last updated, Last verified,
+Owner, Review cycle. Claims that age on their own (a closing count, an award)
+keep their own verification date next to the claim as well.
 
 This repo is public. Nothing operational and nothing sensitive belongs in it.
 Sadie's phone prompt used to live here and was moved to the `nhc-ops` repo,
@@ -94,28 +104,40 @@ that owns it.
 
 ## Pending work
 
-### Duplicates still outstanding
+### Duplicates: none outstanding
 
-These five files each hold their own copy of a fact this repo owns. They are
-the remaining drift risk. All copies matched the source when measured on
-11 September 2026, so nothing is wrong in public right now. They become
-pointers once the access method for agents is settled.
+The five skill files listed here on 11 September 2026 were fixed before
+14 September 2026. A search of all 22 organization skills on 14 September
+2026 for the office phone, the three retired numbers, the office address,
+the BE phone, the review claim, the closing counts, and the brand color
+codes found zero copies. Every skill that needs one of those facts now
+fetches it from this repo by full URL.
 
-| File | Line | Duplicated fact |
+Two skill files still contain a stale typed value on purpose, each fenced
+off by its own SKILL.md so it can never ship:
+
+| File | Stale value | Why it is still there |
 | --- | --- | --- |
-| `nhc-bio-builder/SKILL.md` | 108 | office phone |
-| `nhc-blog-writer/SKILL.md` | 100 | office phone |
-| `nhc-blog-writer/references/seo-ai-checklist.md` | 96 | office phone and office address |
-| `nhc-content-machine/SKILL.md` | 73 | office phone |
-| `nhc-seller-update-report/assets/report-template.html` | 457 | office address |
+| `nhc-blog-writer/references/seo-ai-checklist.md` | office phone and address in the NAP example | SKILL.md says to ignore that line and read the repo instead |
+| `nhc-seller-update-report/assets/report-template.html` | office address in the signature block | SKILL.md says to replace it from the repo before rendering |
 
-Six copies of two facts across five files. Line numbers are from
-11 September 2026 and will drift as those files are edited, so search for the
-value rather than trusting the line number.
+Both are candidates for a placeholder token on the next edit of those
+skills. They are not a live drift risk today.
 
-`nhc-bio-builder/references/nhc-brand.md` is already done. It is a short file
-that points at the real source and holds no facts of its own. Use it as the
-model for the five above.
+### Facts that still need a human
+
+- `company/people.md`: roles carried over unchanged. Bob or Madison confirms.
+- `company/services.md`: New Home Collective has no approved service list
+  yet. Bob writes it or approves one.
+- `brands/lake-days/BRAND-VOICE.md`: property facts undated, and one selling
+  point changed for fair housing. Blaire confirms both.
+- `brands/be/BRAND-VOICE.md`: six open items, unchanged since August.
+
+### How edits reach main
+
+`main` is protected. Every change goes through a pull request with one
+approval, except from a repository admin. Bob's ChatGPT has write access
+and edits through pull requests. Madison reviews and merges.
 
 ---
 

@@ -1,10 +1,13 @@
 # NHC Brand Voice: The Single Source of Truth
 
-This is the only file that defines New Home Collective brand voice, identity facts, and writing rules.
+Last updated: September 14, 2026
+Last verified: August 24, 2026 (identity facts and social proof). See the dates on each claim.
+Owner: Bob Sophiea. Maintainer: Madison Feldman.
+Review cycle: quarterly. Social proof re-verified every six months at most.
 
-If any other skill contradicts this file, this file wins. Do not copy this content into other skills. Point to it instead.
+This is the only file that defines New Home Collective brand voice and identity facts.
 
-Last updated: August 24, 2026
+If any other file, skill, or prompt contradicts this file, this file wins. Do not copy this content anywhere else. Point to it instead.
 
 ---
 
@@ -39,7 +42,7 @@ Last updated: August 24, 2026
 - (859) 721-2127
 - (859) 710-5714
 
-If you find one of these anywhere, in a skill file, on a website, in a directory listing, flag it.
+If you find one of these anywhere, in a skill, a prompt, a website, a directory listing, flag it.
 
 ---
 
@@ -57,7 +60,7 @@ Every number carries a verification date. If a date is more than six months old,
 
 Every piece of NHC marketing content should carry at least one of these.
 
-**Rule for new numbers:** nothing goes in this list without a source and a date. If a skill references a stat that is not on this list, that stat is not approved.
+**Rule for new numbers:** nothing goes in this list without a source and a date. If any skill, prompt, or draft uses a stat that is not on this list, that stat is not approved.
 
 ---
 
@@ -143,27 +146,14 @@ Never sample these for NHC design. Badge gold clashes with NHC gold #f8c82f, so 
 
 ---
 
-## Team Roster (reference when relevant)
+## Team Roster
 
-- Bob Sophiea, Founder
-- Blaire Sophiea, Sales Agent and Property Manager (Lake Days)
-- Brandon Cox, Lead Listing Agent
-- Cameron Effoe (Cam), Lead Listing Agent
-- Danny, Sales Agent
-- Jed, Sales Agent
-- Jeremy, Sales Agent
-- Madison Feldman, Onboarding and Agent Support Manager
-- Hazel, Operations Manager
-- Julie, Listing Coordinator
-- Jay, Transaction Coordinator
-- Jennifer, ISA
-- Ivy, ISA
-- Joseph, Video, Social, and Marketing
-- Eric Kimble, Investment and Cash Offer (BE Property Ventures)
+The roster, roles, and name spelling rules for every brand live in one place.
 
-**Spelling rule:** Eric **Kimble**. Not Kimball. Bob **Sophiea**. Not Sofia, not Sophia. Blaire **Sophiea**. Not Blair.
+**Fetch this web page: https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/people.md**
 
-**Not on the team:** Claire. If a draft names a Claire, it is wrong.
+It is not duplicated here. If you cannot reach that file, say so and stop.
+Do not name a team member from memory.
 
 ---
 
@@ -184,7 +174,11 @@ Focus on the client's goals, timeline, financial outcome, and convenience. The h
 
 ## Other Brands (do not mix)
 
-- **Lake Days, Cabin Stays** is a separate brand. Use the `lake-days-blog-writer` skill. The universal writing rules above still apply. The NHC identity facts do not.
-- **BE Property Ventures** is a separate brand. Use the `be-investor-content` skill. The universal writing rules above still apply. The NHC identity facts do not.
+- **Lake Days, Cabin Stays** is a separate brand. Its facts live here:
+  https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/brands/lake-days/BRAND-VOICE.md The universal writing rules above still apply. The NHC identity facts do not.
+- **BE Property Ventures** is a separate brand. Its facts live here:
+  https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/brands/be/BRAND-VOICE.md The universal writing rules above still apply. The NHC identity facts do not.
+- What each brand does is defined once here:
+  https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/services.md
 
 Never mix two brands in one piece of content.

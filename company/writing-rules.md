@@ -1,5 +1,10 @@
 # Universal Writing Rules
 
+Last updated: September 14, 2026
+Last verified: September 14, 2026
+Owner: Bob Sophiea. Maintainer: Madison Feldman.
+Review cycle: quarterly.
+
 This file owns the writing rules for every brand. New Home Collective,
 BE Property Ventures, and Lake Days, Cabin Stays all write this way.
 
