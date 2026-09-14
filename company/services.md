@@ -31,8 +31,9 @@ serves (buyers, sellers, investors, and agents), not by this list.
 - **Listing and selling.** Pricing, marketing, and selling homes. Home
   equity reports before listing, seller update reports while on the market.
 - **Cash offers.** A cash offer path for sellers who want speed and
-  certainty, run through the NHC Cash Offer Hub. Cash offer content follows
-  the honesty rules in the BE brand file, because BE is the buyer.
+  certainty, run through the NHC Cash Offer Hub. Who the buyer is on an NHC
+  cash offer, and whether BE's honesty rules apply, is not written down
+  anywhere in this repo yet. Bob confirms.
 - **Investor work.** Helping investors buy and sell in Central Kentucky.
 - **Agent recruiting and development.** Bringing agents onto the team and
   training them. Recruiting content follows the "Agent recruiting" tone in
