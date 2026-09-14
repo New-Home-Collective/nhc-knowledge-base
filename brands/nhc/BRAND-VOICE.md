@@ -119,9 +119,9 @@ Do not write from memory.
 
 ---
 
-## Fair Housing Rules
+## Fair Housing and Compliance Rules
 
-These are shared across every brand and live in one place.
+NHC's section, and the shared fair housing core, live in one place.
 
 **Fetch this web page: https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/compliance.md**
 

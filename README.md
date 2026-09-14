@@ -23,7 +23,7 @@ rules this repo runs on.
 | Folder | What it holds |
 | --- | --- |
 | `brands/` | Brand voice and identity facts for New Home Collective, BE Property Ventures, and Lake Days, Cabin Stays. One file per brand. |
-| `company/` | Facts that are true across all three brands. `people.md` (roster and spelling), `services.md` (what each brand does), `compliance.md` (fair housing), `writing-rules.md` (how we write). |
+| `company/` | Facts that are true across all three brands. `people.md` (roster and spelling), `services.md` (what each brand does), `compliance.md` (fair housing and compliance, NHC and BE only), `writing-rules.md` (how we write). |
 
 Each file says at the top what it owns. If a fact is not in the file that owns
 it, it does not exist yet, and the answer is to add it there rather than write

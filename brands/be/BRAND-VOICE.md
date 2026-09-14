@@ -72,7 +72,8 @@ Use it as three short lines when there's room. Use the bullet version (We Buy â€
 
 **Spelling rule:** name spellings live in one place. Fetch this web page: https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/people.md
 
-**NMLS rule:** any marketing that names Eric Kimble alongside lending, financing, mortgage, or loan terms must display **NMLS #13855**. No exceptions. This includes social posts, flyers, mailers, video captions, and web pages. If Eric is named and money-lending language appears anywhere in the piece, the NMLS number appears too.
+**NMLS and licensee rules** live with the rest of BE compliance. Fetch this web page:
+https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/compliance.md
 
 **Phone rule:** (859) 518-8108 on everything. Signs, mailers, videos, forms, voicemail. One number so every call is trackable and nothing gets lost.
 
@@ -177,9 +178,9 @@ Never run marketing that attacks wholesalers as a group. Attack the behavior, no
 
 ---
 
-## Fair Housing Rules
+## Fair Housing and Compliance Rules
 
-These are shared across every brand and live in one place.
+BE's section, and the shared fair housing core, live in one place.
 
 **Fetch this web page: https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/compliance.md**
 

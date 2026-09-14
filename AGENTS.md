@@ -73,12 +73,14 @@ brands/lake-days/BRAND-VOICE.md  Lake Days, Cabin Stays
 
 company/people.md                team roster, roles, name spelling
 company/services.md              what each brand does
-company/compliance.md            fair housing rules, all brands
+company/compliance.md            compliance rules, NHC and BE only
 company/writing-rules.md         universal writing rules, all brands
 ```
 
-Brands do not mix. The universal writing rules and the fair housing rules
-apply to all three. Everything under `brands/` applies to that one brand.
+Brands do not mix. The universal writing rules apply to all three. The
+compliance file applies to New Home Collective and BE Property Ventures only.
+Lake Days has no compliance rules here, by owner decision. Everything under
+`brands/` applies to that one brand.
 
 Every core file opens with the same four lines: Last updated, Last verified,
 Owner, Review cycle. Claims that age on their own (a closing count, an award)

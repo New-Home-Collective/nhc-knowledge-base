@@ -5,9 +5,13 @@ Last verified: September 14, 2026
 Owner: Bob Sophiea. Maintainer: Madison Feldman.
 Review cycle: every six months, and immediately if the law or brokerage guidance changes.
 
-This file owns the fair housing rules for every brand. New Home Collective,
-BE Property Ventures, and Lake Days, Cabin Stays all follow what is written
-here.
+This file owns the compliance rules for the two real estate brands, New Home
+Collective and BE Property Ventures. Each brand has its own section. The
+short shared core at the top applies to both.
+
+Lake Days, Cabin Stays is not in this file. It is a vacation rental Bob and
+Blaire own and run personally, listed on Airbnb. It has no compliance rules
+in this repo and nothing that writes for Lake Days should read this file.
 
 Nothing else may hold its own copy of these rules. If you find a second copy
 anywhere, delete it and point at this file instead.
@@ -18,9 +22,10 @@ recalled wrong is a legal problem.
 
 ---
 
-## Fair Housing Rules
+## Shared core: fair housing
 
-Mandatory. Every brand, every tool, every time.
+Mandatory for New Home Collective and BE Property Ventures. Every piece,
+every time.
 
 ### Never describe the people
 
@@ -59,29 +64,43 @@ is buying it.
 
 ---
 
-## Where this applies
+---
 
-**New Home Collective.** All listing copy, blog posts, social posts, bios,
-seller and buyer materials, and anything Sadie says on the phone.
+## New Home Collective
 
-**BE Property Ventures.** All investor, cash offer, seller, and wholesale
-content. Buying a house does not exempt the advertising around it.
+The shared core above, applied to all listing copy, blog posts, social posts,
+bios, seller and buyer materials, and anything Sadie says on the phone.
 
-**Lake Days, Cabin Stays.** Short-term rental listings and travel content are
-covered too. The Fair Housing Act reaches advertising for dwellings, and a
-cabin someone stays in is a dwelling. Describe the cabin, the lake, the
-drive, and the amenities. Do not describe who the cabin is for.
+Listing content describes only what is verifiable. See Tone by Content Type
+in the NHC brand file.
+
+---
+
+## BE Property Ventures
+
+The shared core above, applied to all investor, cash offer, seller, and
+wholesale content. Buying a house does not exempt the advertising around it.
+
+**NMLS rule.** Any marketing that names Eric Kimble alongside lending,
+financing, mortgage, or loan terms must display **NMLS #13855**. No
+exceptions. This includes social posts, flyers, mailers, video captions, and
+web pages. If Eric is named and money-lending language appears anywhere in
+the piece, the NMLS number appears too.
+
+**Licensee disclosure.** Bob is a licensed real estate agent in Kentucky.
+Every BE contract, mailer, sign, and offer needs licensee disclosure
+language. The exact wording is still an open item in the BE brand file.
 
 ---
 
 ## Open item
 
-This section is a merge of two rule sets that had already drifted apart, one
+The fair housing core is a merge of two rule sets that had drifted apart, one
 in the New Home Collective brand file and one in the BE brand file. Nothing
-was invented and nothing was dropped. The safe property lists from both were
-combined, since neither was complete on its own.
+was invented and nothing was dropped.
 
-Lake Days had no fair housing rules at all before this file existed. It does
-now.
+On September 14, 2026 Lake Days was removed from this file by owner
+decision, and the BE NMLS and licensee rules moved here from the BE brand
+file so all BE compliance sits in one section.
 
 Verified 14 September 2026.

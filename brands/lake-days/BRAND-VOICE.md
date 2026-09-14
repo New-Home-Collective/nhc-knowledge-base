@@ -101,17 +101,15 @@ Do not write from memory.
 
 ---
 
-## Fair Housing Rules
+## Compliance
 
-These are shared across every brand and live in one place.
+Lake Days, Cabin Stays is a vacation rental Bob and Blaire Sophiea own and
+run personally. It is not part of New Home Collective and it is not a
+brokerage listing. It has no compliance rules in this repo, and nothing
+writing for Lake Days reads company/compliance.md. Owner decision,
+September 14, 2026.
 
-**Fetch this web page: https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/compliance.md**
-
-They are not duplicated here. If you cannot reach that file, say so and stop.
-Do not write housing content from memory.
-
-This applies to cabin listings and travel content too. A cabin someone stays
-in is a dwelling.
+Listings live on Airbnb and follow Airbnb's own policies there.
 
 ---
 
