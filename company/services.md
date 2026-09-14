@@ -21,10 +21,9 @@ from memory.
 
 A real estate team in Lexington and Central Kentucky, brokered by eXp Realty.
 
-**Draft. Bob approves before this list is used in public content.** Nothing
-below was invented. Each line comes from something the team already does in
-its apps, skills, or brand file. Until Bob approves, describe NHC by who it
-serves (buyers, sellers, investors, and agents), not by this list.
+**Approved for use by Madison Feldman, September 14, 2026.** Nothing below
+was invented. Each line comes from something the team already does in its
+apps, skills, or brand file. Bob can revise it any time.
 
 - **Buyer representation.** Helping people find and buy homes in Lexington
   and Central Kentucky.

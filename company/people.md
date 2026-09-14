@@ -1,7 +1,7 @@
 # People
 
 Last updated: September 14, 2026
-Last verified: September 14, 2026
+Last verified: September 14, 2026 (roles confirmed by Madison Feldman)
 Owner: Bob Sophiea. Maintainer: Madison Feldman.
 Review cycle: quarterly, or the day someone joins or leaves.
 
@@ -52,8 +52,8 @@ memory.
 
 ---
 
-## Open item
+## Note
 
-Roles were carried over from the New Home Collective brand file as written on
-August 24, 2026. Nothing was added or removed. Bob or Madison should confirm
-each role is still current.
+Roles were confirmed by Madison Feldman on September 14, 2026. One file
+covers all three brands on purpose. The section above says who belongs to
+which brand, so a per-brand roster would be a second copy of the same names.
