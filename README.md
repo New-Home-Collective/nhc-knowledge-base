@@ -81,5 +81,5 @@ memory.
    up, delete the copy and put a pointer in its place.
 4. If the fact can go stale, update the verification date next to it.
 
-Changes to `main` go through a pull request that Madison approves. Keep each
-one small enough that reading it is quick.
+Edit the file and save to `main`. No pull request, no approval. Keep each
+change small enough that the next person can read it quickly.

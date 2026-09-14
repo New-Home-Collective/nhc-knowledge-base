@@ -137,9 +137,18 @@ skills. They are not a live drift risk today.
 
 ### How edits reach main
 
-`main` is protected. Every change goes through a pull request with one
-approval, except from a repository admin. Bob's ChatGPT has write access
-and edits through pull requests. Madison reviews and merges.
+Edits go straight to `main`. No branches, no pull requests, no approvals.
+Bob, Madison, and any AI tool with write access commit directly. Every skill
+reads `main` live, so a saved edit is in effect on the next fetch.
+
+This is deliberate and it is different from the app repos. `nhc-ops` and
+`nhc-cash-offer` use branches and a preview link that Madison reviews before
+anything merges, because a bad merge there breaks a live app. This repo is
+writing. A wrong word here shows up in the next draft, not on a live screen,
+and gets fixed with another commit.
+
+The only protection on `main` is that nobody can delete it or rewrite its
+history.
 
 ---
 
