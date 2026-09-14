@@ -15,7 +15,9 @@ If any other file, skill, or prompt contradicts this file, this file wins. Do no
 
 ### Identity
 
-Who manages the brand, and how names are spelled, lives at https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/people.md. What the brand does lives at https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/services.md.
+Who manages the brand, and how names are spelled, lives here:
+  https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/people.md What the brand does lives here:
+  https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/services.md
 
 - **Full name:** Lake Days, Cabin Stays
 - **Location:** Lake Cumberland, KY (Jamestown / Russell Springs area)
@@ -115,8 +117,10 @@ in is a dwelling.
 
 ## Other Brands (do not mix)
 
-- **New Home Collective** is the real estate team. Its facts live at https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/brands/nhc/BRAND-VOICE.md.
-- **BE Property Ventures** buys houses. Its facts live at https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/brands/be/BRAND-VOICE.md.
+- **New Home Collective** is the real estate team. Its facts live here:
+  https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/brands/nhc/BRAND-VOICE.md
+- **BE Property Ventures** buys houses. Its facts live here:
+  https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/brands/be/BRAND-VOICE.md
 
 The universal writing rules are shared across all three. Nothing else is.
 

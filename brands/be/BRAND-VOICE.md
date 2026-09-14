@@ -205,9 +205,12 @@ Rule: gold leads, black structures, white supports. Black background is the defa
 
 ## Relationship to Other Brands
 
-- **New Home Collective** is the real estate team. Different company, different rules. Its facts live at https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/brands/nhc/BRAND-VOICE.md.
-- **Lake Days, Cabin Stays** is the short term rental brand. Its facts live at https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/brands/lake-days/BRAND-VOICE.md.
-- What each brand does is defined once at https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/services.md.
+- **New Home Collective** is the real estate team. Different company, different rules. Its facts live here:
+  https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/brands/nhc/BRAND-VOICE.md
+- **Lake Days, Cabin Stays** is the short term rental brand. Its facts live here:
+  https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/brands/lake-days/BRAND-VOICE.md
+- What each brand does is defined once here:
+  https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/services.md
 
 The universal writing rules are shared across all three. Nothing else is. Never mix two brands in one piece of content.
 

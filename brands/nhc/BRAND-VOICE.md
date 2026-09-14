@@ -174,8 +174,11 @@ Focus on the client's goals, timeline, financial outcome, and convenience. The h
 
 ## Other Brands (do not mix)
 
-- **Lake Days, Cabin Stays** is a separate brand. Its facts live at https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/brands/lake-days/BRAND-VOICE.md. The universal writing rules above still apply. The NHC identity facts do not.
-- **BE Property Ventures** is a separate brand. Its facts live at https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/brands/be/BRAND-VOICE.md. The universal writing rules above still apply. The NHC identity facts do not.
-- What each brand does is defined once at https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/services.md.
+- **Lake Days, Cabin Stays** is a separate brand. Its facts live here:
+  https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/brands/lake-days/BRAND-VOICE.md The universal writing rules above still apply. The NHC identity facts do not.
+- **BE Property Ventures** is a separate brand. Its facts live here:
+  https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/brands/be/BRAND-VOICE.md The universal writing rules above still apply. The NHC identity facts do not.
+- What each brand does is defined once here:
+  https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/services.md
 
 Never mix two brands in one piece of content.
