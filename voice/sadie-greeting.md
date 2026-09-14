@@ -32,5 +32,6 @@ the disclosures landed late or not at all if the caller talked over her. The
 first message now matches the opening line written in
 `voice/sadie-prompt.md`.
 
-Changed as a draft in Vapi on 14 September 2026. Not published at the time of
-this commit. Confirm the live version before relying on this file.
+Changed and published in Vapi on 14 September 2026 as version v12. Vapi
+confirmed the assistant was updated and deployed, so this is what callers
+hear now.

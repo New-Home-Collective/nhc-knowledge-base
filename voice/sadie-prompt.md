@@ -3,7 +3,8 @@
 This is the prompt New Home Collective's inbound phone assistant runs on. It
 lives in Vapi, on the assistant named "NHC Sadie."
 
-Pulled from Vapi version v11 on 14 September 2026.
+Pulled from Vapi version v11 on 14 September 2026. Still current as of v12,
+which changed only the first message.
 Assistant ID `9c37deb1-a666-4c51-8391-3d6fde3f8a8b`.
 
 **This file is a record, not the live copy.** Vapi is where the prompt
