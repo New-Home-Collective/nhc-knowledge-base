@@ -113,19 +113,12 @@ Content aimed at group one is the priority. Everything else is secondary.
 
 ## Universal Writing Rules
 
-These apply to every word BE publishes. No exceptions.
+These are shared across every brand and live in one place.
 
-- **No em dashes.** Use a period or rewrite the sentence.
-- **Fifth grade reading level.** Short sentences. Common words.
-- **Short paragraphs.** Two to four sentences max.
-- **Punchy line breaks.** Let lines breathe.
-- **Contractions.** Use them naturally.
-- **Conversational.** Write how Bob talks.
-- **Storytelling over polish.** A real moment beats a perfect sentence.
-- **Single-word lines for emphasis** when the moment calls for it.
-- **Active voice.** Always.
-- **"You" and "your."** Speak to one person, not an audience.
-- **No jargon** without a plain-language explanation. Most sellers do not know what ARV, assignment, or subject-to means.
+**Read `company/writing-rules.md` in this repository, section "The rules."**
+
+They are not duplicated here. If you cannot reach that file, say so and stop.
+Do not write from memory.
 
 ---
 

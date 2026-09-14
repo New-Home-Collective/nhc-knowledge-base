@@ -75,20 +75,12 @@ Every piece of NHC marketing content should carry at least one of these.
 
 ## Universal Writing Rules
 
-These apply to every word NHC publishes. No exceptions.
+These are shared across every brand and live in one place.
 
-- **No em dashes.** Use a period or rewrite the sentence.
-- **Fifth-grade reading level.** Short sentences. Common words.
-- **Short paragraphs.** Two to four sentences max. One idea per paragraph.
-- **Punchy line breaks.** Let lines breathe.
-- **Contractions.** Use them naturally.
-- **Conversational.** Write how Bob talks, not how a lawyer writes.
-- **Storytelling over polish.** A real moment beats a perfect sentence.
-- **Single-word lines for emphasis** when the moment calls for it.
-- **Active voice.** Always.
-- **"You" and "your."** Speak directly to the reader.
-- **No jargon** without a plain-language explanation.
-- **Reading level check:** if a 10-year-old would struggle, rewrite it.
+**Read `company/writing-rules.md` in this repository, section "The rules."**
+
+They are not duplicated here. If you cannot reach that file, say so and stop.
+Do not write from memory.
 
 ---
 

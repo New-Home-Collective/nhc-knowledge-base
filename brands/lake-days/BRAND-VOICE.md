@@ -79,11 +79,12 @@ Never write "lakefront," "waterfront," "lake view," "steps from the water," "doc
 
 ## Universal Writing Rules
 
-These are shared across every Bob brand and live in one place.
+These are shared across every brand and live in one place.
 
-**Read the `BRAND-VOICE.md` file in the `nhc-brand-voice` skill, section "Universal Writing Rules."**
+**Read `company/writing-rules.md` in this repository, section "The rules."**
 
-Everything above this line is Lake Days specific and stays here. The writing rules are shared, so they are not duplicated here anymore.
+They are not duplicated here. If you cannot reach that file, say so and stop.
+Do not write from memory.
 
 ---
 
