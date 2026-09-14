@@ -115,7 +115,7 @@ Content aimed at group one is the priority. Everything else is secondary.
 
 These are shared across every brand and live in one place.
 
-**Read `company/writing-rules.md` in this repository, section "The rules."**
+**Fetch this web page: https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/writing-rules.md**
 
 They are not duplicated here. If you cannot reach that file, say so and stop.
 Do not write from memory.
@@ -179,7 +179,7 @@ Never run marketing that attacks wholesalers as a group. Attack the behavior, no
 
 These are shared across every brand and live in one place.
 
-**Read `company/compliance.md` in this repository, section "Fair Housing Rules."**
+**Fetch this web page: https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/compliance.md**
 
 They are not duplicated here. If you cannot reach that file, say so and stop.
 Do not write housing content from memory.
