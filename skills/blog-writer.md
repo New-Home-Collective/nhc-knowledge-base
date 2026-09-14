@@ -22,7 +22,15 @@ Before writing anything, read these three files live:
 - Writing rules: company/writing-rules.md
 - Fair housing rules, mandatory every time: company/compliance.md
 
-If you cannot open them, say so and stop. Do not write from memory.
+If your fetch tool will only open a URL that already appeared in a search
+result, search the web first for the exact phrase below (one search per
+file, before trying to fetch), then fetch the URL that search returns:
+- "New-Home-Collective nhc-knowledge-base BRAND-VOICE.md raw githubusercontent"
+- "New-Home-Collective nhc-knowledge-base writing-rules.md raw githubusercontent"
+- "New-Home-Collective nhc-knowledge-base compliance.md raw githubusercontent"
+
+If you still cannot open them after searching, say so and stop. Do not
+write from memory.
 
 ---
 
