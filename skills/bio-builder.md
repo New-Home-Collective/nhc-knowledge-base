@@ -6,8 +6,8 @@ Facts (brand voice, phone number, fair housing rules) are never repeated here.
 They live in brands/nhc/BRAND-VOICE.md, company/writing-rules.md, and
 company/compliance.md. Read those live, every time, before writing.
 
-Last updated: 2026-09-14
-Last verified: 2026-09-14
+Last updated: 2026-09-15
+Last verified: 2026-09-15
 Owner: Madison Feldman
 Review cycle: as needed
 
@@ -22,15 +22,10 @@ Before writing anything, read these three files live:
 - Writing rules: company/writing-rules.md
 - Fair housing rules, mandatory every time: company/compliance.md
 
-If your fetch tool will only open a URL that already appeared in a search
-result, search the web first for the exact phrase below (one search per
-file, before trying to fetch), then fetch the URL that search returns:
-- "New-Home-Collective nhc-knowledge-base BRAND-VOICE.md raw githubusercontent"
-- "New-Home-Collective nhc-knowledge-base writing-rules.md raw githubusercontent"
-- "New-Home-Collective nhc-knowledge-base compliance.md raw githubusercontent"
-
-If you still cannot open them after searching, say so and stop. Do not
-write from memory.
+Read them through the NHC Knowledge Base connector. There is no public
+web address and no other way in. If the connector is not enabled, ask the
+person to enable it and try again. If it is enabled and a read still
+fails, say so and stop. Do not write from memory.
 
 ---
 
@@ -79,7 +74,7 @@ Price it right. Sell it fast. That's what they hired you for.
 **For newer agents:**
 Don't pretend to have production you don't have. Lead with what IS real:
 - Local roots (how long they've lived here)
-- Full team support (NHC, Lexington's most-reviewed team)
+- Full team support (use the Descriptor from brands/nhc/BRAND-VOICE.md, Identity Facts)
 - Availability and responsiveness
 - Personal commitment to learning and client service
 
@@ -202,12 +197,14 @@ A bio succeeds if:
 ## Notes on Bob Sophiea's Bio Specifically
 
 Bob is the founder. His bio carries the weight of the entire brand.
-- Lead with New Home Collective as Lexington's most-reviewed real estate team
+- Lead with the team Descriptor from brands/nhc/BRAND-VOICE.md, Identity Facts
 - His story (resilience, turning hard times into something real) is one of
   the most powerful in real estate, use it carefully but don't hide it
 - His commitment to building a team that changes people's lives is authentic
   and differentiating
 - His goals are not about lifestyle, they're about impact on his team and clients
-- YouTube presence (Living in Lexington KY, 521 videos) is a major credibility signal
-- Quote or reference his mission: "We don't just transact real estate. We
-  create clarity, confidence, and excellence in every move."
+- His YouTube channel is a credibility signal. Name it and describe it, but
+  do not state a video count. That number changes on its own and no approved
+  version of it exists in this repo.
+- Quote or reference the Mission from brands/nhc/BRAND-VOICE.md. Do not type
+  it from memory.
