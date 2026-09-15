@@ -10,8 +10,8 @@ time, before writing.
 For Lake Days / Cabin Stays content, use the lake-days-blog-writer skill.
 Do not mix the two brands in one post.
 
-Last updated: 2026-09-14
-Last verified: 2026-09-14
+Last updated: 2026-09-15
+Last verified: 2026-09-15
 Owner: Madison Feldman
 Review cycle: as needed
 
@@ -22,15 +22,10 @@ Before writing anything, read these three files live:
 - Writing rules: company/writing-rules.md
 - Fair housing rules, mandatory every time: company/compliance.md
 
-If your fetch tool will only open a URL that already appeared in a search
-result, search the web first for the exact phrase below (one search per
-file, before trying to fetch), then fetch the URL that search returns:
-- "New-Home-Collective nhc-knowledge-base BRAND-VOICE.md raw githubusercontent"
-- "New-Home-Collective nhc-knowledge-base writing-rules.md raw githubusercontent"
-- "New-Home-Collective nhc-knowledge-base compliance.md raw githubusercontent"
-
-If you still cannot open them after searching, say so and stop. Do not
-write from memory.
+Read them through the NHC Knowledge Base connector. There is no public
+web address and no other way in. If the connector is not enabled, ask the
+person to enable it and try again. If it is enabled and a read still
+fails, say so and stop. Do not write from memory.
 
 ---
 
