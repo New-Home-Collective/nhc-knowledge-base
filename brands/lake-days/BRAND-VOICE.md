@@ -1,6 +1,6 @@
 # Lake Days, Cabin Stays Brand Voice: The Single Source of Truth
 
-Last updated: September 14, 2026
+Last updated: September 15, 2026
 Last verified: September 14, 2026 (property facts carried over unchanged; see Open Items).
 Owner: Bob Sophiea and Blaire Sophiea. Maintainer: Madison Feldman.
 Review cycle: quarterly, and any time a cabin is added, removed, or changed.
@@ -16,8 +16,8 @@ If any other file, skill, or prompt contradicts this file, this file wins. Do no
 ### Identity
 
 Who manages the brand, and how names are spelled, lives here:
-  https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/people.md What the brand does lives here:
-  https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/services.md
+  company/people.md What the brand does lives here:
+  company/services.md
 
 - **Full name:** Lake Days, Cabin Stays
 - **Location:** Lake Cumberland, KY (Jamestown / Russell Springs area)
@@ -94,7 +94,7 @@ Never write "lakefront," "waterfront," "lake view," "steps from the water," "doc
 
 These are shared across every brand and live in one place.
 
-**Fetch this web page: https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/writing-rules.md**
+**Read this file from the knowledge base: company/writing-rules.md**
 
 They are not duplicated here. If you cannot reach that file, say so and stop.
 Do not write from memory.
@@ -116,9 +116,9 @@ Listings live on Airbnb and follow Airbnb's own policies there.
 ## Other Brands (do not mix)
 
 - **New Home Collective** is the real estate team. Its facts live here:
-  https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/brands/nhc/BRAND-VOICE.md
+  brands/nhc/BRAND-VOICE.md
 - **BE Property Ventures** buys houses. Its facts live here:
-  https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/brands/be/BRAND-VOICE.md
+  brands/be/BRAND-VOICE.md
 
 The universal writing rules are shared across all three. Nothing else is.
 
@@ -127,10 +127,9 @@ The universal writing rules are shared across all three. Nothing else is.
 ## Platform Rules
 
 Lake Days cabins are listed on Airbnb. Airbnb has its own nondiscrimination
-policy, and every listing and message has to follow it on top of the fair
-housing rules in compliance.md. Nobody has written down yet where the two
-overlap and where Airbnb allows wording that a home sale listing would not.
-See Open Items.
+policy, and every listing and message follows it there. Nothing writing for
+Lake Days reads company/compliance.md. See the Compliance section above and
+Open Items.
 
 ---
 
