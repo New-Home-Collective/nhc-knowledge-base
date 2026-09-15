@@ -1,0 +1,399 @@
+<meta charset="utf-8">
+<style>
+  @page { size: Letter; }
+
+  :root{
+    --ink:#101B2B;
+    --ink-soft:#2C3B4F;
+    --slate:#6B7686;
+    --rule:#D6D2C8;
+    --hard:#101B2B;
+    --sand:#F2EEE5;
+    --brick:#9C3323;
+    --brick-wash:#F7EAE7;
+    --moss:#3D5B45;
+  }
+
+  *{box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+
+  body{
+    margin:0;
+    color:var(--ink);
+    font-family:"Carlito","Helvetica",sans-serif;
+    font-size:9.3pt;
+    line-height:1.45;
+  }
+
+  .page{ page-break-after:always; }
+  .page:last-child{ page-break-after:auto; }
+  .avoid{ page-break-inside:avoid; }
+
+  /* ---------- masthead ---------- */
+  .masthead{
+    border-bottom:1.6pt solid var(--hard);
+    padding-bottom:9pt;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:20pt;
+  }
+  .eyebrow{
+    font-family:"DejaVu Sans Mono",monospace;
+    font-size:6.2pt;
+    letter-spacing:.15em;
+    text-transform:uppercase;
+    color:var(--slate);
+    margin:0 0 5pt;
+  }
+  .masthead h1{
+    font-family:"TeX Gyre Pagella","Palatino",serif;
+    font-weight:normal;
+    font-size:25pt;
+    line-height:1;
+    letter-spacing:-.01em;
+    margin:0;
+  }
+  .masthead .sub{
+    font-family:"TeX Gyre Pagella",serif;
+    font-style:italic;
+    font-size:11.5pt;
+    color:var(--slate);
+    margin:4pt 0 0;
+  }
+  .brandmark{ text-align:right; flex-shrink:0; }
+  .brandmark img{ height:26pt; width:auto; display:block; margin-left:auto; }
+  .brandmark .wordmark{
+    font-family:"Poppins",sans-serif;
+    font-weight:500;
+    font-size:11pt;
+    letter-spacing:.13em;
+    text-transform:uppercase;
+    line-height:1.25;
+    white-space:nowrap;
+  }
+  .brandmark .wordmark span{ display:block; font-size:8.6pt; letter-spacing:.24em; color:var(--slate); }
+  .brandmark .tag{
+    font-family:"DejaVu Sans Mono",monospace;
+    font-size:5.8pt;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--slate);
+    margin-top:5pt;
+  }
+
+  /* ---------- stat strip ---------- */
+  .strip{ display:flex; border-bottom:.6pt solid var(--rule); }
+  .stat{ flex:1; padding:11pt 9pt 12pt; border-right:.6pt solid var(--rule); }
+  .stat:last-child{ border-right:none; padding-right:0; }
+  .stat:first-child{ padding-left:0; }
+  .stat .k{
+    font-family:"DejaVu Sans Mono",monospace;
+    font-size:5.8pt; letter-spacing:.13em; text-transform:uppercase;
+    color:var(--slate); display:block; margin-bottom:5pt;
+  }
+  .stat .v{ font-family:"TeX Gyre Pagella",serif; font-size:17pt; line-height:1; }
+  .stat .n{ font-size:7.2pt; color:var(--slate); margin-top:4pt; line-height:1.3; }
+  .stat.flag .v{ color:var(--brick); }
+
+  /* ---------- thesis ---------- */
+  .thesis{ padding:13pt 0 12pt; border-bottom:.6pt solid var(--rule); }
+  .thesis p.big{
+    font-family:"TeX Gyre Pagella",serif;
+    font-size:20pt; line-height:1.28; margin:0; max-width:24ch;
+  }
+  .thesis p.after{
+    font-size:9pt; line-height:1.55; color:var(--ink-soft);
+    max-width:62ch; margin:12pt 0 0;
+  }
+
+  /* ---------- sections ---------- */
+  section{ padding-top:10pt; }
+  .sec-head{
+    display:flex; align-items:baseline; gap:10pt;
+    border-bottom:1.1pt solid var(--hard); padding-bottom:5pt; margin-bottom:13pt;
+  }
+  .sec-head h2{
+    font-family:"TeX Gyre Pagella",serif; font-weight:normal;
+    font-size:15pt; margin:0; letter-spacing:-.005em;
+  }
+  .sec-head .count{
+    font-family:"DejaVu Sans Mono",monospace; font-size:6.2pt;
+    letter-spacing:.1em; text-transform:uppercase; color:var(--slate);
+    margin-left:auto; white-space:nowrap;
+  }
+  .lede{ font-size:8.7pt; color:var(--ink-soft); max-width:70ch; margin:0 0 10pt; }
+
+  /* ---------- quote wall ---------- */
+  .wall{ display:flex; flex-wrap:wrap; border-top:.6pt solid var(--rule); border-left:.6pt solid var(--rule); }
+  .q{
+    width:25%; border-right:.6pt solid var(--rule); border-bottom:.6pt solid var(--rule);
+    padding:7pt 7pt 6pt; display:flex; flex-direction:column; min-height:63pt;
+  }
+  .q.hit{ background:var(--brick-wash); }
+  .q blockquote{
+    margin:0 0 auto; font-family:"TeX Gyre Pagella",serif;
+    font-size:9.4pt; line-height:1.34;
+  }
+  .q.hit blockquote{ color:var(--brick); }
+  .q cite{
+    font-style:normal; font-family:"DejaVu Sans Mono",monospace;
+    font-size:5.4pt; letter-spacing:.03em; color:var(--slate); line-height:1.45;
+    padding-top:6pt; margin-top:6pt; border-top:.5pt solid var(--rule); display:block;
+  }
+  .tally{
+    display:flex; align-items:flex-start; gap:13pt;
+    margin-top:10pt; padding-top:9pt; border-top:1.6pt solid var(--hard);
+  }
+  .tally .big{
+    font-family:"TeX Gyre Pagella",serif; font-size:30pt; line-height:.85;
+    color:var(--brick); white-space:nowrap;
+  }
+  .tally .txt{ font-size:8.8pt; color:var(--ink-soft); margin:0; }
+
+  /* ---------- table ---------- */
+  table{ width:100%; border-collapse:collapse; }
+  thead th{
+    font-family:"DejaVu Sans Mono",monospace; font-size:5.8pt;
+    letter-spacing:.11em; text-transform:uppercase; color:var(--slate);
+    font-weight:normal; text-align:right; padding:0 6pt 5pt;
+    border-bottom:1.1pt solid var(--hard);
+  }
+  thead th:first-child{ text-align:left; padding-left:0; }
+  tbody td{
+    padding:6pt; border-bottom:.6pt solid var(--rule); text-align:right;
+    font-family:"DejaVu Sans Mono",monospace; font-size:7.6pt;
+    font-variant-numeric:tabular-nums;
+  }
+  tbody td:first-child{
+    text-align:left; padding-left:0;
+    font-family:"Carlito",sans-serif; font-size:8.6pt;
+  }
+  tbody tr.subject td{
+    background:var(--brick-wash); color:var(--brick); font-weight:bold;
+    border-top:.8pt solid var(--brick); border-bottom:.8pt solid var(--brick);
+  }
+  tbody tr.subject td:first-child{ padding-left:6pt; }
+  .grouprow td{
+    padding:13pt 0 4pt; border-bottom:.8pt solid var(--hard);
+    font-family:"DejaVu Sans Mono",monospace; font-size:5.8pt;
+    letter-spacing:.11em; text-transform:uppercase; color:var(--ink); text-align:left;
+  }
+  .fast{ color:var(--moss); }
+
+  /* ---------- callout ---------- */
+  .callout{
+    border:1.1pt solid var(--hard); background:var(--sand);
+    padding:14pt 15pt 13pt; display:flex; gap:17pt; align-items:flex-start;
+  }
+  .callout .num{
+    font-family:"TeX Gyre Pagella",serif; font-size:27pt; line-height:.9;
+    flex-shrink:0; white-space:nowrap;
+  }
+  .callout h3{ font-family:"TeX Gyre Pagella",serif; font-weight:normal; font-size:12.5pt; margin:0 0 5pt; }
+  .callout p{ margin:0; font-size:8.7pt; color:var(--ink-soft); }
+
+  /* ---------- chart ---------- */
+  .chart{ border:.6pt solid var(--rule); background:#fff; padding:10pt 11pt 7pt; }
+  .bars{ display:flex; gap:4pt; align-items:flex-end; height:44pt; border-bottom:1pt solid var(--hard); }
+  .bar{ flex:1; height:100%; display:flex; flex-direction:column; justify-content:flex-end; }
+  .bar i{ display:block; background:var(--ink); width:100%; }
+  .bar.post i{ background:var(--brick); }
+  .bar b{ font-family:"DejaVu Sans Mono",monospace; font-size:6.2pt; text-align:center; padding-bottom:2pt; color:var(--slate); font-weight:normal; }
+  .xaxis{ display:flex; gap:4pt; margin-top:5pt; }
+  .xaxis span{ flex:1; font-family:"DejaVu Sans Mono",monospace; font-size:5.4pt; color:var(--slate); text-align:center; }
+  .cutline{
+    margin-top:8pt; padding-top:6pt; border-top:.6pt solid var(--rule);
+    display:flex; gap:16pt; font-size:7.2pt; color:var(--ink-soft);
+  }
+  .cutline span{ display:flex; align-items:center; gap:5pt; }
+  .sw{ width:7pt; height:7pt; flex-shrink:0; display:inline-block; }
+  .sw.a{ background:var(--ink); }
+  .sw.b{ background:var(--brick); }
+
+  /* ---------- big quote ---------- */
+  .bigquote{ border:.6pt solid var(--rule); padding:11pt 13pt 10pt; }
+  .bigquote blockquote{
+    margin:0; font-family:"TeX Gyre Pagella",serif; font-size:10.6pt; line-height:1.32;
+  }
+  .bigquote cite{
+    font-style:normal; font-family:"DejaVu Sans Mono",monospace; font-size:5.8pt;
+    letter-spacing:.04em; color:var(--slate); display:block;
+    margin-top:7pt; padding-top:6pt; border-top:.5pt solid var(--rule);
+  }
+
+  /* ---------- paths ---------- */
+  .paths{ display:flex; border-top:.6pt solid var(--rule); border-left:.6pt solid var(--rule); }
+  .path{
+    flex:1; border-right:.6pt solid var(--rule); border-bottom:.6pt solid var(--rule);
+    padding:9pt 9pt 10pt;
+  }
+  .path .lbl{
+    font-family:"DejaVu Sans Mono",monospace; font-size:5.6pt;
+    letter-spacing:.13em; text-transform:uppercase; color:var(--slate); margin-bottom:6pt;
+  }
+  .path h3{ font-family:"TeX Gyre Pagella",serif; font-weight:normal; font-size:11pt; line-height:1.15; margin:0 0 6pt; }
+  .path p{ margin:0 0 6pt; font-size:7.2pt; color:var(--ink-soft); }
+  .path .cost{
+    font-family:"DejaVu Sans Mono",monospace; font-size:6.2pt; color:var(--ink);
+    padding-top:7pt; border-top:.5pt solid var(--rule); line-height:1.4;
+  }
+
+  /* ---------- close ---------- */
+  .close{
+    margin-top:9pt; border-top:1.6pt solid var(--hard); padding-top:9pt;
+    display:flex; justify-content:space-between; gap:26pt; align-items:flex-start;
+  }
+  .close .ask{
+    font-family:"TeX Gyre Pagella",serif; font-size:13pt; line-height:1.26;
+    max-width:26ch; margin:0;
+  }
+  .close .sig{ font-size:7.8pt; color:var(--slate); line-height:1.65; text-align:right; white-space:nowrap; }
+  .close .sig strong{ color:var(--ink); }
+  .disclaim{
+    margin-top:6pt; padding-top:5pt; border-top:.6pt solid var(--rule);
+    font-size:6pt; color:var(--slate); line-height:1.5;
+  }
+</style>
+
+<style>
+  .form h1{ font-family:"TeX Gyre Pagella",serif; font-weight:normal; font-size:20pt; margin:0; line-height:1; }
+  .verify{ border:1.1pt solid var(--brick); background:var(--brick-wash); color:var(--brick); padding:7pt 10pt; font-size:8.4pt; margin-top:9pt; }
+  .grid2{ display:grid; grid-template-columns:1fr 1fr; gap:8pt 14pt; margin-top:9pt; }
+  .field{ border-bottom:.8pt solid var(--ink); padding:3pt 0 2pt; min-height:22pt; font-size:8.8pt; }
+  .field b{ display:block; font-family:"DejaVu Sans Mono",monospace; font-size:5.6pt; letter-spacing:.13em; text-transform:uppercase; color:var(--slate); font-weight:normal; margin-bottom:2pt; }
+  .field.tall{ min-height:40pt; }
+  .field.pre{ color:var(--ink-soft); }
+  .fsec{ margin-top:11pt; border-top:1.1pt solid var(--hard); padding-top:5pt; }
+  .fsec h2{ font-family:"TeX Gyre Pagella",serif; font-weight:normal; font-size:12pt; margin:0 0 4pt; }
+  .fsec .hint{ font-size:7.4pt; color:var(--slate); margin:0 0 5pt; }
+  .walk{ width:100%; border-collapse:collapse; }
+  .walk th{ font-family:"DejaVu Sans Mono",monospace; font-size:5.6pt; letter-spacing:.11em; text-transform:uppercase; color:var(--slate); font-weight:normal; text-align:left; padding:0 4pt 3pt; border-bottom:.8pt solid var(--hard); }
+  .walk td{ padding:0 4pt; height:19pt; border-bottom:.6pt solid var(--rule); font-size:8.4pt; }
+  .walk td:first-child{ width:19%; color:var(--ink-soft); }
+  .walk td.box{ width:9%; text-align:center; font-family:"DejaVu Sans Mono",monospace; font-size:7pt; color:var(--slate); }
+  .checks{ font-size:8.8pt; line-height:2.1; }
+  .checks span{ display:inline-block; width:10pt; height:10pt; border:.8pt solid var(--ink); vertical-align:middle; margin-right:6pt; }
+  .rungbox{ display:flex; gap:8pt; margin-top:4pt; }
+  .rungbox div{ flex:1; border:.8pt solid var(--ink); padding:6pt 8pt; min-height:38pt; font-size:8pt; }
+  .rungbox b{ display:block; font-family:"DejaVu Sans Mono",monospace; font-size:5.6pt; letter-spacing:.13em; text-transform:uppercase; color:var(--slate); font-weight:normal; margin-bottom:3pt; }
+  .ruled div{ border-bottom:.6pt solid var(--ink); height:17pt; }
+  .foot{ margin-top:8pt; padding-top:5pt; border-top:.6pt solid var(--rule); font-size:6.4pt; color:var(--slate); display:flex; justify-content:space-between; }
+</style>
+
+<!--
+  NHC LISTING APPOINTMENT FIELD FORM
+  ----------------------------------
+  Two pages, prints on one sheet double-sided. Thirteen prefill tokens:
+    SELLERS, PROPERTY, APPT, SOURCE, UPDATES, SELLER_RATING, MLS_SUMMARY,
+    TAX_SQFT, TAX_BEDBATH, TAX_GARAGELOT, OWNED, ZESTIMATE_LINE, PRIOR_HISTORY
+  Everything else stays blank on purpose. The agent writes on this at the house.
+  Do not add prefilled fields. A prefilled answer is a question the agent will not ask.
+-->
+
+<!-- ============================ PAGE 1: BEFORE AND DURING THE WALK ============================ -->
+<div class="page form">
+  <div class="masthead">
+    <div>
+      <p class="eyebrow">Listing Appointment Field Form &middot; Agent copy, not for the seller</p>
+      <h1>{{PROPERTY}}</h1>
+      <p class="sub">{{SELLERS}} &middot; {{APPT}}</p>
+    </div>
+    <div class="brandmark"><div class="wordmark">New Home<span>Collective</span></div></div>
+  </div>
+  <div class="verify">Everything printed on this form came from the MLS or the intake call. Verify every line at the house before you trust it. Cross out what is wrong and write what is right.</div>
+
+  <div class="grid2">
+    <div class="field pre"><b>Lead source</b>{{SOURCE}}</div>
+    <div class="field pre"><b>Owned since (MLS last sale)</b>{{OWNED}}</div>
+    <div class="field pre tall" style="grid-column:1 / -1"><b>MLS summary</b>{{MLS_SUMMARY}}</div>
+    <div class="field pre"><b>Tax / MLS sq ft &middot; verify</b>{{TAX_SQFT}}</div>
+    <div class="field pre"><b>Tax / MLS beds and baths &middot; verify</b>{{TAX_BEDBATH}}</div>
+    <div class="field pre"><b>Garage and lot &middot; verify</b>{{TAX_GARAGELOT}}</div>
+    <div class="field pre"><b>Zillow estimate</b>{{ZESTIMATE_LINE}}</div>
+    <div class="field pre tall" style="grid-column:1 / -1"><b>Prior listing history</b>{{PRIOR_HISTORY}}</div>
+  </div>
+
+  <div class="fsec">
+    <h2>What they told us before today</h2>
+    <div class="grid2">
+      <div class="field pre tall" style="grid-column:1 / -1"><b>Updates the seller mentioned, in their words</b>{{UPDATES}}</div>
+      <div class="field pre"><b>Seller's own rating, 1 to 10</b>{{SELLER_RATING}}</div>
+      <div class="field tall"><b>Ask: what would make it a 10?</b></div>
+    </div>
+  </div>
+
+  <div class="fsec">
+    <h2>The walk</h2>
+    <p class="hint">Score each room against the photo pages. 2 = shows like the sold comps. 3 = like under contract. 4 = like the actives. Note what you actually see. Prep only comes from this table.</p>
+    <table class="walk">
+      <thead><tr><th>Room</th><th class="box">2 / 3 / 4</th><th>Condition, updates, dates, what it cost</th><th>Prep worth doing</th></tr></thead>
+      <tbody>
+        <tr><td>Front / curb</td><td class="box">&#9633; &#9633; &#9633;</td><td></td><td></td></tr>
+        <tr><td>Kitchen</td><td class="box">&#9633; &#9633; &#9633;</td><td></td><td></td></tr>
+        <tr><td>Primary bath</td><td class="box">&#9633; &#9633; &#9633;</td><td></td><td></td></tr>
+        <tr><td>Second bath</td><td class="box">&#9633; &#9633; &#9633;</td><td></td><td></td></tr>
+        <tr><td>Main living</td><td class="box">&#9633; &#9633; &#9633;</td><td></td><td></td></tr>
+        <tr><td>Bedrooms</td><td class="box">&#9633; &#9633; &#9633;</td><td></td><td></td></tr>
+        <tr><td>Basement / bonus</td><td class="box">&#9633; &#9633; &#9633;</td><td></td><td></td></tr>
+        <tr><td>Back / yard</td><td class="box">&#9633; &#9633; &#9633;</td><td></td><td></td></tr>
+        <tr><td>Roof, HVAC, water heater (ages)</td><td class="box"></td><td></td><td></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="foot"><span>Page 1 of 2</span><span>Flip for the conversation</span></div>
+</div>
+
+<!-- ============================ PAGE 2: THE CONVERSATION ============================ -->
+<div class="page form">
+  <div class="fsec" style="border-top:none; margin-top:0; padding-top:0">
+    <h2>Before page 5 of the report. Get both yeses.</h2>
+    <div class="checks">
+      <span></span>"Can I tell you what you need to hear instead of what you want to hear?"<br>
+      <span></span>"If you land on a price I think hurts your goals, is it okay that I say so?"
+    </div>
+  </div>
+
+  <div class="fsec">
+    <h2>Where they landed</h2>
+    <div class="rungbox">
+      <div><b>Rung they picked</b></div>
+      <div><b>Number they had in mind (never goes in the report)</b></div>
+      <div><b>Gap, and what they said about it</b></div>
+    </div>
+  </div>
+
+  <div class="fsec">
+    <h2>Why they are moving</h2>
+    <div class="grid2">
+      <div class="field tall"><b>Reason and where to</b></div>
+      <div class="field tall"><b>Timeline. When do they need to be gone?</b></div>
+      <div class="field"><b>Have they talked to another agent?</b></div>
+      <div class="field"><b>Net they need to make the move work</b></div>
+    </div>
+  </div>
+
+  <div class="fsec">
+    <h2>Objections that came up</h2>
+    <p class="hint">Write what they said, not your answer. You know your answer.</p>
+    <div class="ruled"><div></div><div></div><div></div></div>
+  </div>
+
+  <div class="fsec">
+    <h2>Money</h2>
+    <div class="grid2">
+      <div class="field"><b>Mortgage payoff (their statement)</b></div>
+      <div class="field"><b>Second mortgage / HELOC / liens</b></div>
+      <div class="field"><b>Any known repairs a buyer's inspector will find</b></div>
+      <div class="field"><b>HOA, fees, special assessments</b></div>
+    </div>
+  </div>
+
+  <div class="fsec">
+    <h2>Leaving the house</h2>
+    <div class="checks">
+      <span></span>Listing agreement signed &nbsp;&nbsp; <span></span>Photo date set: ____________ &nbsp;&nbsp; <span></span>Prep list agreed &nbsp;&nbsp; <span></span>Follow-up date: ____________
+    </div>
+    <div class="field tall"><b>Notes for the file</b></div>
+  </div>
+  <div class="foot"><span>Page 2 of 2</span><span>New Home Collective &middot; eXp Realty, LLC</span></div>
+</div>
