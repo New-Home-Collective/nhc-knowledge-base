@@ -44,9 +44,15 @@ This matters most for the fair housing rules in
 `company/compliance.md`. A brand fact recalled from memory is
 embarrassing. A fair housing rule recalled from memory is a legal problem.
 
-This repo is public, so any AI tool can read it with no account, no invite,
-and no connector setup. A read should only fail if GitHub is down or the file
-was renamed. Either way rule 3 still applies: say so and stop.
+This repo is private. Tools read it through the NHC Knowledge Base
+connector, which is authenticated. There is no public web address and no
+fallback. A read fails if the connector is not enabled, if GitHub is down,
+or if the file was renamed. In every case rule 3 applies: say so and stop.
+
+Raw GitHub URLs (`raw.githubusercontent.com/...`) do not work. They never
+worked reliably. The chat fetch tool refuses URLs it has not already seen in
+a search result, and search does not surface raw file URLs. Any skill or
+prompt still using one is broken and should point at the connector instead.
 
 ### 4. Nothing with a live source goes in here
 
@@ -75,7 +81,17 @@ company/people.md                team roster, roles, name spelling
 company/services.md              what each brand does
 company/compliance.md            compliance rules, NHC and BE only
 company/writing-rules.md         universal writing rules, all brands
+
+skills/bio-builder.md            how NHC bios get written
+skills/blog-writer.md            how NHC blog posts get written
 ```
+
+Files under `skills/` hold instructions, not facts. They point at the brand
+and company files for every fact they need. A skill file that types a fact
+is a bug, the same as any other duplicate.
+
+Pointers inside this repo use repo-relative paths, like
+`company/writing-rules.md`. Never a full URL.
 
 Brands do not mix. The universal writing rules apply to all three. The
 compliance file applies to New Home Collective and BE Property Ventures only.
@@ -86,10 +102,12 @@ Every core file opens with the same four lines: Last updated, Last verified,
 Owner, Review cycle. Claims that age on their own (a closing count, an award)
 keep their own verification date next to the claim as well.
 
-This repo is public. Nothing operational and nothing sensitive belongs in it.
-Sadie's phone prompt used to live here and was moved to the `nhc-ops` repo,
-at `docs/sadie-prompt.md`, because Ops owns Sadie and the routing behind her.
-No credentials, no keys, no phone scripts.
+This repo is private as of 15 September 2026. It still holds nothing
+operational and nothing sensitive. Sadie's phone prompt used to live here and
+was moved to the `nhc-ops` repo, at `docs/sadie-prompt.md`, because Ops owns
+Sadie and the routing behind her. No credentials, no keys, no phone scripts.
+Private means access is deliberate, which matters most for the fair housing
+rules in `company/compliance.md`.
 
 ---
 
@@ -108,31 +126,32 @@ that owns it.
 
 ### Duplicates: none outstanding
 
-The five skill files listed here on 11 September 2026 were fixed before
-14 September 2026. A search of all 22 organization skills on 14 September
-2026 for the office phone, the three retired numbers, the office address,
-the BE phone, the review claim, the closing counts, and the brand color
-codes found zero copies. Every skill that needs one of those facts now
-fetches it from this repo by full URL.
+A search of all 22 organization skills on 15 September 2026 for the
+office phone, the three retired numbers, the office address, the BE phone,
+the review claim, the closing counts, and the brand color codes found zero
+copies.
 
-Two skill files still contain a stale typed value on purpose, each fenced
-off by its own SKILL.md so it can never ship:
+The two stale typed values noted on 14 September 2026 are gone.
+`nhc-blog-writer/references/seo-ai-checklist.md` no longer exists, and
+`nhc-seller-update-report/assets/report-template.html` now uses an
+`{{OFFICE_ADDRESS}}` placeholder filled from `brands/nhc/BRAND-VOICE.md`.
 
-| File | Stale value | Why it is still there |
-| --- | --- | --- |
-| `nhc-blog-writer/references/seo-ai-checklist.md` | office phone and address in the NAP example | SKILL.md says to ignore that line and read the repo instead |
-| `nhc-seller-update-report/assets/report-template.html` | office address in the signature block | SKILL.md says to replace it from the repo before rendering |
+On 15 September 2026, `skills/bio-builder.md` was found holding three facts
+(the team descriptor, the mission line, and a YouTube video count). All
+three were replaced with pointers.
 
-Both are candidates for a placeholder token on the next edit of those
-skills. They are not a live drift risk today.
+### Skills that still fetch by raw URL
+
+As of 15 September 2026, 15 organization skills still read this repo by
+raw GitHub URL, which does not work in chat. Each needs to be repointed at
+the NHC Knowledge Base connector. Until that is done, those skills hit their
+stop condition every time. Tracked outside this repo by Madison.
 
 ### Facts that still need a human
 
 - `company/people.md`: roles carried over unchanged. Bob or Madison confirms.
-- `company/services.md`: New Home Collective has no approved service list
-  yet. Bob writes it or approves one.
-- `brands/lake-days/BRAND-VOICE.md`: property facts undated, and one selling
-  point changed for fair housing. Blaire confirms both.
+- `brands/lake-days/BRAND-VOICE.md`: property facts undated, and the
+  familial status wording question is open. Blaire confirms the facts.
 - `brands/be/BRAND-VOICE.md`: six open items, unchanged since August.
 
 ### How edits reach main
