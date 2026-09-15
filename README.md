@@ -24,6 +24,7 @@ rules this repo runs on.
 | --- | --- |
 | `brands/` | Brand voice and identity facts for New Home Collective, BE Property Ventures, and Lake Days, Cabin Stays. One file per brand. |
 | `company/` | Facts that are true across all three brands. `people.md` (roster and spelling), `services.md` (what each brand does), `compliance.md` (fair housing and compliance, NHC and BE only), `writing-rules.md` (how we write). |
+| `skills/` | Step-by-step instructions for specific jobs (bio writing, blog writing). These hold no facts. They point at `brands/` and `company/` for every fact. |
 
 Each file says at the top what it owns. If a fact is not in the file that owns
 it, it does not exist yet, and the answer is to add it there rather than write
@@ -34,42 +35,45 @@ it down somewhere else.
 ## How a skill or prompt points at a file
 
 A skill, a custom GPT, or a prompt should never contain a fact from this repo.
-It should contain an instruction to go read it. Give the full web address, not
-a bare file path. A bare path gets misread as a local file.
+It should contain an instruction to go read it through the NHC Knowledge Base
+connector, using the repo-relative path.
 
 Write it like this:
 
 ```
-Fetch this web page:
-https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/brands/nhc/BRAND-VOICE.md
+Read this file from the NHC Knowledge Base connector:
+brands/nhc/BRAND-VOICE.md
 
 Use the office phone number exactly as written in the Identity Facts section.
 Do not use a phone number from memory or from any other file.
 
-If you cannot open that page, say so and stop. Do not answer from memory.
+If the connector is not enabled, ask the person to enable it and try again.
+If it is enabled and the read still fails, say so and stop. Do not answer
+from memory.
 ```
 
-Three things make that work. The instruction says "fetch this web page," so
-the tool knows it is a URL. It names the section, so there is no guessing. And
-it says what to do when the read fails, which is to stop rather than improvise.
+Three things make that work. It names the connector, so the tool knows how
+to get in. It names the file and the section, so there is no guessing. And it
+says what to do when the read fails, which is to stop rather than improvise.
 
-This wording is proven. It is what every Claude skill uses today, and a fresh
-chat with no setup reads the files correctly with it.
+Do not use a `raw.githubusercontent.com` URL. Those never worked reliably in
+chat and the repo is private now, so they do not work at all.
 
 ---
 
 ## Access
 
-The repo is public. Any AI tool can read these files with no account, no
-invite, and no setup.
+The repo is private. AI tools read it through the NHC Knowledge Base
+connector, which is authenticated. Each person has to have that connector
+enabled in their own Claude conversations or the skills cannot reach these
+files.
 
-That is deliberate. Nothing in here is secret. It is brand voice, writing
-rules, and fair housing rules, all of it either already public or harmless if
-it were. Anything operational or sensitive belongs somewhere else. Sadie's
-phone prompt used to live here and now lives in the `nhc-ops` repo.
+Nothing in here is secret. It is brand voice, writing rules, and fair housing
+rules. Private means access is deliberate, not accidental. Anything
+operational or sensitive still belongs somewhere else. Sadie's phone prompt
+used to live here and now lives in the `nhc-ops` repo.
 
-If a read does fail, the skill still says so and stops. It never answers from
-memory.
+If a read fails, the skill says so and stops. It never answers from memory.
 
 ---
 
