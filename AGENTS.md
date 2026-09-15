@@ -82,13 +82,19 @@ company/services.md              what each brand does
 company/compliance.md            compliance rules, NHC and BE only
 company/writing-rules.md         universal writing rules, all brands
 
-skills/bio-builder.md            how NHC bios get written
-skills/blog-writer.md            how NHC blog posts get written
+skills/<name>.md                 instructions for one skill, one file each
+skills/<name>/references/        that skill's playbooks and checklists
+skills/<name>/assets/            that skill's HTML templates
 ```
 
 Files under `skills/` hold instructions, not facts. They point at the brand
 and company files for every fact they need. A skill file that types a fact
 is a bug, the same as any other duplicate.
+
+Every Claude-side skill is a stub. It names its `skills/<name>.md` file
+here and does nothing else. Changing how a skill works means editing the
+file here. The stub in Claude never changes. Scripts a skill runs (PDF
+rendering) stay with the stub, since they execute in Claude's sandbox.
 
 Pointers inside this repo use repo-relative paths, like
 `company/writing-rules.md`. Never a full URL.
@@ -140,12 +146,18 @@ On 15 September 2026, `skills/bio-builder.md` was found holding three facts
 (the team descriptor, the mission line, and a YouTube video count). All
 three were replaced with pointers.
 
-### Skills that still fetch by raw URL
+### Skills moved into this repo
 
-As of 15 September 2026, 15 organization skills still read this repo by
-raw GitHub URL, which does not work in chat. Each needs to be repointed at
-the NHC Knowledge Base connector. Until that is done, those skills hit their
-stop condition every time. Tracked outside this repo by Madison.
+On 15 September 2026 all 15 skills that read this repo were repointed from
+raw GitHub URLs to the NHC Knowledge Base connector, and their instructions
+moved into `skills/`. Every Claude-side skill is now a stub. Two skills,
+`listing-photo-organizer` and `nhc-get-to-know-me`, do not read this repo
+and were left alone.
+
+Known gap: `skills/nhc-sales-trainer.md` refers to seven reference files
+(objections, buyer and seller scripts, listing SOP, frameworks, negotiation,
+email and text templates) that do not exist anywhere. They were never in the
+skill folder. Either write them or remove the references.
 
 ### Facts that still need a human
 
