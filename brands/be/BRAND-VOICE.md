@@ -1,6 +1,6 @@
 # BE Property Ventures Brand Voice: The Single Source of Truth
 
-Last updated: September 14, 2026
+Last updated: September 15, 2026
 Last verified: August 10, 2026 (identity facts). See Open Items for what is still unconfirmed.
 Owner: Bob Sophiea. Maintainer: Madison Feldman.
 Review cycle: quarterly.
@@ -70,10 +70,10 @@ Use it as three short lines when there's room. Use the bullet version (We Buy â€
 - **Email:** open
 - **Mailing address:** open
 
-**Spelling rule:** name spellings live in one place. Fetch this web page: https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/people.md
+**Spelling rule:** name spellings live in one place. Read this file from the knowledge base: company/people.md
 
-**NMLS and licensee rules** live with the rest of BE compliance. Fetch this web page:
-https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/compliance.md
+**NMLS and licensee rules** live with the rest of BE compliance. Read this file from the knowledge base:
+company/compliance.md
 
 **Phone rule:** (859) 518-8108 on everything. Signs, mailers, videos, forms, voicemail. One number so every call is trackable and nothing gets lost.
 
@@ -83,7 +83,7 @@ https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/co
 
 The five things BE does, and the rule that all five get named every time, live in one place for every brand.
 
-**Fetch this web page: https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/services.md**
+**Read this file from the knowledge base: company/services.md**
 
 It is not duplicated here. If you cannot reach that file, say so and stop.
 Do not describe what BE does from memory.
@@ -118,7 +118,7 @@ Content aimed at group one is the priority. Everything else is secondary.
 
 These are shared across every brand and live in one place.
 
-**Fetch this web page: https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/writing-rules.md**
+**Read this file from the knowledge base: company/writing-rules.md**
 
 They are not duplicated here. If you cannot reach that file, say so and stop.
 Do not write from memory.
@@ -182,7 +182,7 @@ Never run marketing that attacks wholesalers as a group. Attack the behavior, no
 
 BE's section, and the shared fair housing core, live in one place.
 
-**Fetch this web page: https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/compliance.md**
+**Read this file from the knowledge base: company/compliance.md**
 
 They are not duplicated here. If you cannot reach that file, say so and stop.
 Do not write housing content from memory.
@@ -207,11 +207,11 @@ Rule: gold leads, black structures, white supports. Black background is the defa
 ## Relationship to Other Brands
 
 - **New Home Collective** is the real estate team. Different company, different rules. Its facts live here:
-  https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/brands/nhc/BRAND-VOICE.md
+  brands/nhc/BRAND-VOICE.md
 - **Lake Days, Cabin Stays** is the short term rental brand. Its facts live here:
-  https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/brands/lake-days/BRAND-VOICE.md
+  brands/lake-days/BRAND-VOICE.md
 - What each brand does is defined once here:
-  https://raw.githubusercontent.com/New-Home-Collective/nhc-knowledge-base/main/company/services.md
+  company/services.md
 
 The universal writing rules are shared across all three. Nothing else is. Never mix two brands in one piece of content.
 
