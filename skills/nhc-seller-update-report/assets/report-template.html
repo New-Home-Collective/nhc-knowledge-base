@@ -1,0 +1,472 @@
+<meta charset="utf-8">
+<style>
+  @page { size: Letter; }
+
+  :root{
+    --ink:#101B2B;
+    --ink-soft:#2C3B4F;
+    --slate:#6B7686;
+    --rule:#D6D2C8;
+    --hard:#101B2B;
+    --sand:#F2EEE5;
+    --brick:#9C3323;
+    --brick-wash:#F7EAE7;
+    --moss:#3D5B45;
+  }
+
+  *{box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+
+  body{
+    margin:0;
+    color:var(--ink);
+    font-family:"Carlito","Helvetica",sans-serif;
+    font-size:9.3pt;
+    line-height:1.45;
+  }
+
+  .page{ page-break-after:always; }
+  .page:last-child{ page-break-after:auto; }
+  .avoid{ page-break-inside:avoid; }
+
+  /* ---------- masthead ---------- */
+  .masthead{
+    border-bottom:1.6pt solid var(--hard);
+    padding-bottom:9pt;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:20pt;
+  }
+  .eyebrow{
+    font-family:"DejaVu Sans Mono",monospace;
+    font-size:6.2pt;
+    letter-spacing:.15em;
+    text-transform:uppercase;
+    color:var(--slate);
+    margin:0 0 5pt;
+  }
+  .masthead h1{
+    font-family:"TeX Gyre Pagella","Palatino",serif;
+    font-weight:normal;
+    font-size:25pt;
+    line-height:1;
+    letter-spacing:-.01em;
+    margin:0;
+  }
+  .masthead .sub{
+    font-family:"TeX Gyre Pagella",serif;
+    font-style:italic;
+    font-size:11.5pt;
+    color:var(--slate);
+    margin:4pt 0 0;
+  }
+  .brandmark{ text-align:right; flex-shrink:0; }
+  .brandmark img{ height:26pt; width:auto; display:block; margin-left:auto; }
+  .brandmark .wordmark{
+    font-family:"Poppins",sans-serif;
+    font-weight:500;
+    font-size:11pt;
+    letter-spacing:.13em;
+    text-transform:uppercase;
+    line-height:1.25;
+    white-space:nowrap;
+  }
+  .brandmark .wordmark span{ display:block; font-size:8.6pt; letter-spacing:.24em; color:var(--slate); }
+  .brandmark .tag{
+    font-family:"DejaVu Sans Mono",monospace;
+    font-size:5.8pt;
+    letter-spacing:.16em;
+    text-transform:uppercase;
+    color:var(--slate);
+    margin-top:5pt;
+  }
+
+  /* ---------- stat strip ---------- */
+  .strip{ display:flex; border-bottom:.6pt solid var(--rule); }
+  .stat{ flex:1; padding:11pt 9pt 12pt; border-right:.6pt solid var(--rule); }
+  .stat:last-child{ border-right:none; padding-right:0; }
+  .stat:first-child{ padding-left:0; }
+  .stat .k{
+    font-family:"DejaVu Sans Mono",monospace;
+    font-size:5.8pt; letter-spacing:.13em; text-transform:uppercase;
+    color:var(--slate); display:block; margin-bottom:5pt;
+  }
+  .stat .v{ font-family:"TeX Gyre Pagella",serif; font-size:17pt; line-height:1; }
+  .stat .n{ font-size:7.2pt; color:var(--slate); margin-top:4pt; line-height:1.3; }
+  .stat.flag .v{ color:var(--brick); }
+
+  /* ---------- thesis ---------- */
+  .thesis{ padding:13pt 0 12pt; border-bottom:.6pt solid var(--rule); }
+  .thesis p.big{
+    font-family:"TeX Gyre Pagella",serif;
+    font-size:20pt; line-height:1.28; margin:0; max-width:24ch;
+  }
+  .thesis p.after{
+    font-size:9pt; line-height:1.55; color:var(--ink-soft);
+    max-width:62ch; margin:12pt 0 0;
+  }
+
+  /* ---------- sections ---------- */
+  section{ padding-top:10pt; }
+  .sec-head{
+    display:flex; align-items:baseline; gap:10pt;
+    border-bottom:1.1pt solid var(--hard); padding-bottom:5pt; margin-bottom:13pt;
+  }
+  .sec-head h2{
+    font-family:"TeX Gyre Pagella",serif; font-weight:normal;
+    font-size:15pt; margin:0; letter-spacing:-.005em;
+  }
+  .sec-head .count{
+    font-family:"DejaVu Sans Mono",monospace; font-size:6.2pt;
+    letter-spacing:.1em; text-transform:uppercase; color:var(--slate);
+    margin-left:auto; white-space:nowrap;
+  }
+  .lede{ font-size:8.7pt; color:var(--ink-soft); max-width:70ch; margin:0 0 10pt; }
+
+  /* ---------- quote wall ---------- */
+  .wall{ display:flex; flex-wrap:wrap; border-top:.6pt solid var(--rule); border-left:.6pt solid var(--rule); }
+  .q{
+    width:25%; border-right:.6pt solid var(--rule); border-bottom:.6pt solid var(--rule);
+    padding:7pt 7pt 6pt; display:flex; flex-direction:column; min-height:63pt;
+  }
+  .q.hit{ background:var(--brick-wash); }
+  .q blockquote{
+    margin:0 0 auto; font-family:"TeX Gyre Pagella",serif;
+    font-size:9.4pt; line-height:1.34;
+  }
+  .q.hit blockquote{ color:var(--brick); }
+  .q cite{
+    font-style:normal; font-family:"DejaVu Sans Mono",monospace;
+    font-size:5.4pt; letter-spacing:.03em; color:var(--slate); line-height:1.45;
+    padding-top:6pt; margin-top:6pt; border-top:.5pt solid var(--rule); display:block;
+  }
+  .tally{
+    display:flex; align-items:flex-start; gap:13pt;
+    margin-top:10pt; padding-top:9pt; border-top:1.6pt solid var(--hard);
+  }
+  .tally .big{
+    font-family:"TeX Gyre Pagella",serif; font-size:30pt; line-height:.85;
+    color:var(--brick); white-space:nowrap;
+  }
+  .tally .txt{ font-size:8.8pt; color:var(--ink-soft); margin:0; }
+
+  /* ---------- table ---------- */
+  table{ width:100%; border-collapse:collapse; }
+  thead th{
+    font-family:"DejaVu Sans Mono",monospace; font-size:5.8pt;
+    letter-spacing:.11em; text-transform:uppercase; color:var(--slate);
+    font-weight:normal; text-align:right; padding:0 6pt 5pt;
+    border-bottom:1.1pt solid var(--hard);
+  }
+  thead th:first-child{ text-align:left; padding-left:0; }
+  tbody td{
+    padding:6pt; border-bottom:.6pt solid var(--rule); text-align:right;
+    font-family:"DejaVu Sans Mono",monospace; font-size:7.6pt;
+    font-variant-numeric:tabular-nums;
+  }
+  tbody td:first-child{
+    text-align:left; padding-left:0;
+    font-family:"Carlito",sans-serif; font-size:8.6pt;
+  }
+  tbody tr.subject td{
+    background:var(--brick-wash); color:var(--brick); font-weight:bold;
+    border-top:.8pt solid var(--brick); border-bottom:.8pt solid var(--brick);
+  }
+  tbody tr.subject td:first-child{ padding-left:6pt; }
+  .grouprow td{
+    padding:13pt 0 4pt; border-bottom:.8pt solid var(--hard);
+    font-family:"DejaVu Sans Mono",monospace; font-size:5.8pt;
+    letter-spacing:.11em; text-transform:uppercase; color:var(--ink); text-align:left;
+  }
+  .fast{ color:var(--moss); }
+
+  /* ---------- callout ---------- */
+  .callout{
+    border:1.1pt solid var(--hard); background:var(--sand);
+    padding:14pt 15pt 13pt; display:flex; gap:17pt; align-items:flex-start;
+  }
+  .callout .num{
+    font-family:"TeX Gyre Pagella",serif; font-size:27pt; line-height:.9;
+    flex-shrink:0; white-space:nowrap;
+  }
+  .callout h3{ font-family:"TeX Gyre Pagella",serif; font-weight:normal; font-size:12.5pt; margin:0 0 5pt; }
+  .callout p{ margin:0; font-size:8.7pt; color:var(--ink-soft); }
+
+  /* ---------- chart ---------- */
+  .chart{ border:.6pt solid var(--rule); background:#fff; padding:10pt 11pt 7pt; }
+  .bars{ display:flex; gap:4pt; align-items:flex-end; height:44pt; border-bottom:1pt solid var(--hard); }
+  .bar{ flex:1; height:100%; display:flex; flex-direction:column; justify-content:flex-end; }
+  .bar i{ display:block; background:var(--ink); width:100%; }
+  .bar.post i{ background:var(--brick); }
+  .bar b{ font-family:"DejaVu Sans Mono",monospace; font-size:6.2pt; text-align:center; padding-bottom:2pt; color:var(--slate); font-weight:normal; }
+  .xaxis{ display:flex; gap:4pt; margin-top:5pt; }
+  .xaxis span{ flex:1; font-family:"DejaVu Sans Mono",monospace; font-size:5.4pt; color:var(--slate); text-align:center; }
+  .cutline{
+    margin-top:8pt; padding-top:6pt; border-top:.6pt solid var(--rule);
+    display:flex; gap:16pt; font-size:7.2pt; color:var(--ink-soft);
+  }
+  .cutline span{ display:flex; align-items:center; gap:5pt; }
+  .sw{ width:7pt; height:7pt; flex-shrink:0; display:inline-block; }
+  .sw.a{ background:var(--ink); }
+  .sw.b{ background:var(--brick); }
+
+  /* ---------- big quote ---------- */
+  .bigquote{ border:.6pt solid var(--rule); padding:11pt 13pt 10pt; }
+  .bigquote blockquote{
+    margin:0; font-family:"TeX Gyre Pagella",serif; font-size:10.6pt; line-height:1.32;
+  }
+  .bigquote cite{
+    font-style:normal; font-family:"DejaVu Sans Mono",monospace; font-size:5.8pt;
+    letter-spacing:.04em; color:var(--slate); display:block;
+    margin-top:7pt; padding-top:6pt; border-top:.5pt solid var(--rule);
+  }
+
+  /* ---------- paths ---------- */
+  .paths{ display:flex; border-top:.6pt solid var(--rule); border-left:.6pt solid var(--rule); }
+  .path{
+    flex:1; border-right:.6pt solid var(--rule); border-bottom:.6pt solid var(--rule);
+    padding:9pt 9pt 10pt;
+  }
+  .path .lbl{
+    font-family:"DejaVu Sans Mono",monospace; font-size:5.6pt;
+    letter-spacing:.13em; text-transform:uppercase; color:var(--slate); margin-bottom:6pt;
+  }
+  .path h3{ font-family:"TeX Gyre Pagella",serif; font-weight:normal; font-size:11pt; line-height:1.15; margin:0 0 6pt; }
+  .path p{ margin:0 0 6pt; font-size:7.2pt; color:var(--ink-soft); }
+  .path .cost{
+    font-family:"DejaVu Sans Mono",monospace; font-size:6.2pt; color:var(--ink);
+    padding-top:7pt; border-top:.5pt solid var(--rule); line-height:1.4;
+  }
+
+  /* ---------- close ---------- */
+  .close{
+    margin-top:9pt; border-top:1.6pt solid var(--hard); padding-top:9pt;
+    display:flex; justify-content:space-between; gap:26pt; align-items:flex-start;
+  }
+  .close .ask{
+    font-family:"TeX Gyre Pagella",serif; font-size:13pt; line-height:1.26;
+    max-width:26ch; margin:0;
+  }
+  .close .sig{ font-size:7.8pt; color:var(--slate); line-height:1.65; text-align:right; white-space:nowrap; }
+  .close .sig strong{ color:var(--ink); }
+  .disclaim{
+    margin-top:6pt; padding-top:5pt; border-top:.6pt solid var(--rule);
+    font-size:6pt; color:var(--slate); line-height:1.5;
+  }
+</style>
+
+<!--
+  NHC SELLER UPDATE REPORT TEMPLATE
+  ---------------------------------
+  Replace every placeholder. Delete any section the classification does not call for.
+  Repeatable blocks are marked REPEAT. Duplicate or delete rows as needed.
+
+  Classification switches:
+    ON TRACK      -> delete PAGE 2 and the TRAFFIC + PATHS sections. Keep masthead, strip,
+                     thesis, feedback wall, and replace PATHS with a "what happens next" block.
+    EARLY SIGNAL  -> keep everything. Soften the thesis and the PATHS language.
+    STALLED       -> keep everything as built.
+
+  Quote wall: use 12 cards (3 rows of 4). Add class "hit" to cards carrying the repeating
+  objection so they render in brick red. Leave compliments unclassed so they render plain.
+-->
+
+<!-- ============================ PAGE 1: THE ARGUMENT ============================ -->
+<div class="page">
+
+  <div class="masthead">
+    <div>
+      <p class="eyebrow">{{REPORT_LABEL}} &middot; Prepared {{PREPARED_DATE}}</p>
+      <h1>{{STREET_ADDRESS}}</h1>
+      <p class="sub">{{SUBDIVISION}} &middot; {{CITY_STATE_ZIP}}</p>
+    </div>
+    <div class="brandmark">
+      <!-- Swap for <img src="nhc-logo-horizontal-black.png"> when the logo file is available -->
+      <div class="wordmark">New Home<span>Collective</span></div>
+      <div class="tag">Your goals, our mission</div>
+    </div>
+  </div>
+
+  <!-- Five stats. Add class "flag" to any stat that should render in brick red. -->
+  <div class="strip">
+    <div class="stat">
+      <span class="k">Listed</span><div class="v">{{LIST_DATE}}</div>
+      <div class="n">{{LIST_DATE_NOTE}}</div>
+    </div>
+    <div class="stat">
+      <span class="k">Asking now</span><div class="v">{{CURRENT_PRICE}}</div>
+      <div class="n">{{PRICE_NOTE}}</div>
+    </div>
+    <div class="stat flag">
+      <span class="k">Days on market</span><div class="v">{{DOM}}</div>
+      <div class="n">{{DOM_NOTE}}</div>
+    </div>
+    <div class="stat">
+      <span class="k">Showings</span><div class="v">{{SHOWINGS}}</div>
+      <div class="n">{{SHOWINGS_NOTE}}</div>
+    </div>
+    <div class="stat flag">
+      <span class="k">Offers</span><div class="v">{{OFFERS}}</div>
+      <div class="n">{{OFFERS_NOTE}}</div>
+    </div>
+  </div>
+
+  <!-- One-line thesis. This is the whole report in a sentence.
+       The paragraph underneath must lead with what is working. -->
+  <div class="thesis">
+    <p class="big">{{THESIS_LINE}}</p>
+    <p class="after">{{THESIS_PARAGRAPH}}</p>
+  </div>
+
+  <section class="avoid">
+    <div class="sec-head">
+      <h2>What the buyers wrote</h2>
+      <span class="count">Unedited showing feedback &middot; {{FEEDBACK_DATE_RANGE}}</span>
+    </div>
+    <p class="lede">{{FEEDBACK_LEDE}}</p>
+
+    <div class="wall">
+      <!-- REPEAT: one .q per quote. Use exactly 12. Add "hit" for the repeating objection. -->
+      <div class="q hit">
+        <blockquote>&ldquo;{{QUOTE_TEXT}}&rdquo;</blockquote>
+        <cite>{{QUOTE_AGENT}}<br>{{QUOTE_BROKERAGE}} &middot; {{QUOTE_DATE}}</cite>
+      </div>
+      <!-- /REPEAT -->
+    </div>
+
+    <div class="tally">
+      <div class="big">{{TALLY_FRACTION}}</div>
+      <p class="txt">{{TALLY_TEXT}}</p>
+    </div>
+  </section>
+</div>
+
+<!-- ============================ PAGE 2: THE MONEY ============================ -->
+<!-- Delete this entire page for ON TRACK reports. -->
+<div class="page">
+  <section style="padding-top:0" class="avoid">
+    <div class="sec-head">
+      <h2>{{COMPS_HEADING}}</h2>
+      <span class="count">Closed and under contract &middot; {{COMPS_WINDOW}}</span>
+    </div>
+    <p class="lede">{{COMPS_LEDE}}</p>
+
+    <table>
+      <thead>
+        <tr><th>Property</th><th>Sq&nbsp;ft</th><th>Price</th><th>$&thinsp;/&thinsp;sq&nbsp;ft</th><th>Days</th></tr>
+      </thead>
+      <tbody>
+        <tr class="grouprow"><td colspan="5">Sold in {{AREA_NAME}}</td></tr>
+        <!-- REPEAT: closed comps. Add class "fast" to the Days cell when under 14. -->
+        <tr><td>{{COMP_ADDRESS}}</td><td>{{COMP_SQFT}}</td><td>{{COMP_PRICE}}</td><td>{{COMP_PSF}}</td><td class="fast">{{COMP_DOM}}</td></tr>
+        <!-- /REPEAT -->
+
+        <tr class="grouprow"><td colspan="5">Under contract right now in {{AREA_NAME}}</td></tr>
+        <!-- REPEAT: pending and contingent comps -->
+        <tr><td>{{PEND_ADDRESS}}</td><td>{{PEND_SQFT}}</td><td>{{PEND_PRICE}}</td><td>{{PEND_PSF}}</td><td class="fast">{{PEND_DOM}}</td></tr>
+        <!-- /REPEAT -->
+
+        <tr class="grouprow"><td colspan="5">This home</td></tr>
+        <tr class="subject"><td>{{SUBJECT_ADDRESS}}</td><td>{{SUBJECT_SQFT}}</td><td>{{SUBJECT_PRICE}}</td><td>{{SUBJECT_PSF}}</td><td>{{SUBJECT_DOM}}</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Structural explanation. This is what turns a price argument into a conversation.
+       Delete only if no structural reason exists. -->
+  <section class="avoid">
+    <div class="callout">
+      <div class="num">{{STRUCTURAL_NUMBER}}</div>
+      <div>
+        <h3>{{STRUCTURAL_HEADING}}</h3>
+        <p>{{STRUCTURAL_BODY}}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Direct competition. Delete if nothing comparable is newly on the market. -->
+  <section class="avoid">
+    <div class="sec-head">
+      <h2>What just showed up next door</h2>
+      <span class="count">New to market &middot; {{COMPETITOR_DATE}}</span>
+    </div>
+    <div class="callout">
+      <div class="num">{{COMPETITOR_PRICE}}</div>
+      <div>
+        <h3>{{COMPETITOR_ADDRESS}}</h3>
+        <p>{{COMPETITOR_BODY}}</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ============================ PAGE 3: THE PATH ============================ -->
+<div class="page">
+  <!-- Showings per week. Bar heights are percentages of the tallest week.
+       Add class "post" to bars that fall after a price change to render them brick red. -->
+  <section style="padding-top:0" class="avoid">
+    <div class="sec-head">
+      <h2>{{TRAFFIC_HEADING}}</h2>
+      <span class="count">Showings per week &middot; {{TRAFFIC_RANGE}}</span>
+    </div>
+    <p class="lede">{{TRAFFIC_LEDE}}</p>
+    <div class="chart">
+      <div class="bars">
+        <!-- REPEAT: one .bar per week. Use style="height:.7pt" for zero weeks. -->
+        <div class="bar"><b>{{WEEK_COUNT}}</b><i style="height:{{WEEK_PCT}}%"></i></div>
+        <!-- /REPEAT -->
+      </div>
+      <div class="xaxis">
+        <!-- REPEAT: one span per week, same order as the bars -->
+        <span>{{WEEK_LABEL}}</span>
+        <!-- /REPEAT -->
+      </div>
+      <div class="cutline">
+        <span><i class="sw a"></i> {{LEGEND_BEFORE}}</span>
+        <span><i class="sw b"></i> {{LEGEND_AFTER}}</span>
+        <span>{{LEGEND_NOTE}}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Options. Never bold or star a recommended path. Three or four cards.
+       At least one must not be a price reduction. -->
+  <section class="avoid">
+    <div class="sec-head">
+      <h2>{{PATHS_HEADING}}</h2>
+      <span class="count">Your goals decide, not the market</span>
+    </div>
+    <div class="paths">
+      <!-- REPEAT: one .path per option -->
+      <div class="path">
+        <div class="lbl">{{PATH_LABEL}}</div>
+        <h3>{{PATH_TITLE}}</h3>
+        <p>{{PATH_BODY}}</p>
+        <div class="cost">{{PATH_TRADEOFF}}</div>
+      </div>
+      <!-- /REPEAT -->
+    </div>
+  </section>
+
+  <div class="close">
+    <p class="ask">{{CLOSING_QUESTION}}</p>
+    <div class="sig">
+      <strong>{{AGENT_NAME}}</strong><br>
+      New Home Collective &middot; eXp Realty, LLC<br>
+      {{AGENT_PHONE}} &middot; {{AGENT_EMAIL}}<br>
+      {{OFFICE_ADDRESS}}
+      <!-- OFFICE_ADDRESS is filled at build time from brands/nhc/BRAND-VOICE.md
+           in the public repo New-Home-Collective/nhc-knowledge-base, section
+           "Identity Facts." Do not hardcode the address here. If that file
+           cannot be read, stop and say so rather than guessing. -->
+    </div>
+  </div>
+
+  <p class="disclaim">
+    Sources: ShowingTime Listing Activity Report for MLS {{MLS_ID}} covering {{REPORT_WINDOW}}, and
+    Imagine MLS closed and active data as of {{DATA_DATE}}. Showing feedback is reproduced as
+    submitted by the showing agents. Price per square foot is calculated on finished above-grade
+    square footage as reported in the MLS. Comparable sales are a guide to market behavior, not an
+    appraisal.
+  </p>
+</div>
