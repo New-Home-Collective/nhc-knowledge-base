@@ -24,7 +24,7 @@ rules this repo runs on.
 | --- | --- |
 | `brands/` | Brand voice and identity facts for New Home Collective, BE Property Ventures, and Lake Days, Cabin Stays. One file per brand. |
 | `company/` | Facts that are true across all three brands. `people.md` (roster and spelling), `services.md` (what each brand does), `compliance.md` (fair housing and compliance, NHC and BE only), `writing-rules.md` (how we write). |
-| `skills/` | Step-by-step instructions for specific jobs (bio writing, blog writing). These hold no facts. They point at `brands/` and `company/` for every fact. |
+| `skills/` | Step-by-step instructions for every NHC skill, one file per skill, plus each skill's playbooks and templates in a folder of the same name. These hold no facts. They point at `brands/` and `company/` for every fact. The skill installed in Claude is only a stub that names its file here. |
 
 Each file says at the top what it owns. If a fact is not in the file that owns
 it, it does not exist yet, and the answer is to add it there rather than write
